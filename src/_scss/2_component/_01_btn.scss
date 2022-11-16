@@ -1,0 +1,33 @@
+/*------------------------------------------------------------
+btn
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-btn1 {
+    display: inline-block;
+    padding: 10px 50px;
+    font-size: 1.6rem;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    line-height: 1;
+}
+
+.c-buttondesign {
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+
+    .c-buttonleft {
+        width: 45px;
+        display: block;
+    }
+
+    .c-buttonright {
+        width: 45px;
+        display: block;
+        margin-left: 10px;
+    }
+    
+}

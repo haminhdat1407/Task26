@@ -1,0 +1,53 @@
+/* layout
+------------------------------------------------------------*/
+body {
+    font-family: $main-fonts;
+    font-size: 1.4rem;
+    max-width: $base-width;
+    min-width: 375px;
+    line-height: 1.5;
+    
+}
+//-------------------------------------------------------
+// main {
+//     // padding: 0px 0 100px;
+// }
+
+// section {
+//     padding: 50px 0 90px;
+// }
+
+//-------------------------------------------------------
+// .l-container {
+//     width: $base-width;
+//     margin: 0 auto;
+// }
+//-------------------------------------------------------
+.c-case {
+    max-width: 1608px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 40px 0;
+}
+
+.l-containerhouse {
+    margin: 0 auto 60px;
+    max-width: 1305px;
+    padding: 0 40px;
+    width: 100%;
+}
+
+.c-wrapperpoint {
+    max-width: 1740px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.c-wrapperdesign {
+    max-width: 1178px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    top: -366px;
+    display: flex;
+}

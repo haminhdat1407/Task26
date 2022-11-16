@@ -1,0 +1,38 @@
+/*------------------------------------------------------------
+table
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-plan__table {
+    li {
+        padding: 31px 0 9px;
+        display: flex;
+        border-bottom: 1px solid;
+    }
+
+    .c-tabletext {
+        font-size: 2.5rem;
+        color: #231815;
+        font-weight: 300;
+        margin-left: 10px;
+    }
+
+    .c-table__left {
+        width: 20%;
+    }
+
+    .c-table__right {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            border: 1px solid #cbcbcb;
+            font-size: 2rem;
+            margin-right: 22px;
+            padding: 2px 12px 5px;
+            border-radius: 5px;
+        }
+    }
+}
