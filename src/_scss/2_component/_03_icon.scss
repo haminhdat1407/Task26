@@ -6,11 +6,25 @@ icon
 ------------------------------------------------------------*/
 .c-house {
     .c-iconhouse {
-        width: 34px;
+        width: 42px;
         position: absolute;
-        top: -25%;
-        left: 73%;
+        top: 6%;
+        right: 11%;
 
+    }
+
+    .c-iconhousetwo {
+        width: 42px;
+        position: absolute;
+        top: 26%;
+        right: 2%;
+    }
+
+    .c-iconhousethree {
+        width: 46px;
+        position: absolute;
+        top: 21%;
+        right: -1%;
     }
 }
 

@@ -2,9 +2,12 @@
 $base-width: 1920px;
 
 // Font
-$main-fonts: "Noto Sans", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+$main-fonts: "Noto Serif JP", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 
-$sub-font1: "Oswald", sans-serif;
-$sub-font2: "Roboto", sans-serif;
+$sub-font1: "Noto Sans", sans-serif;
+$sub-font2: "Oswald", sans-serif;
+$sub-font3: "Roboto", sans-serif;
 
-//color common
+
+// Background Color
+$background-colormain: #ededed;

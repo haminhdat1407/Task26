@@ -37,19 +37,19 @@ Css of home page
             display: block;
             padding: 30px 0;
             font-weight: 700;
+            transform: translateY(10px);
         }
 
         .c-bannerinner__now {
             display: block;
             margin: 0 auto;
+            transform: translate(4px, 7px);
         }
     }
 
 }
 
-// .p-top {}
 
-// .c-point {
 
 // }
 
@@ -62,7 +62,6 @@ Css of home page
         flex-wrap: wrap;
         justify-content: space-around;
         width: 100%;
-        max-width: 15;
         max-width: 1536px;
         margin: 0 auto;
 
@@ -71,9 +70,12 @@ Css of home page
     .c-itemcase {
         position: relative;
         margin-bottom: 30px;
+        transform: translateY(-31px);
+        width: 31.1%;
+        position: relative;
 
         .c-des {
-
+            font-family: $sub-font1;
             font-size: 2.4rem;
             color: #fff;
             text-align: center;
@@ -99,42 +101,58 @@ Css of home page
         }
     }
 
+    .c-itemcase:nth-child(2) {
+        transform: translate(20px, -30px);
+    }
+
+    .c-itemcase:nth-child(3) {
+        transform: translate(42px, -30px);
+
+        .c-des {
+            letter-spacing: -1.9px;
+            transform: translateX(-7px);
+        }
+    }
+
+
     .c-case__title {
         font-size: 3.6rem;
-        font-family: 400;
+        font-weight: 400;
         text-align: center;
+        font-family: $sub-font1;
+        transform: translateX(16px);
     }
 
     .c-case__number {
-        font-family: $sub-font2;
+        font-family: $sub-font3;
         font-weight: 700;
         font-size: 21.4rem;
         color: #ededed;
-        transform: translateX(20px);
+        transform: translateX(18px);
         display: block;
     }
 
     .c-case__text {
-        font-family: $sub-font2;
+        font-family: $sub-font3;
         font-weight: 700;
         color: #c7c7c7;
         position: absolute;
-        top: 42%;
-        left: 22.5%;
+        top: 54.6%;
+        left: 22.7%;
         font-size: 2.4rem;
         letter-spacing: 6px;
 
     }
 
     .c-case__des {
-        position: relative;
         background-color: #000;
         width: 100%;
-        border-radius: 9px;
+        border-radius: 8px;
         height: 126px;
-        padding: 45px 60px;
-        // top: 56.6%;
-        left: 3.2%;
+        padding: 45px 30px;
+        position: absolute;
+        top: 81.6%;
+        left: -1px;
 
         &::after {
             position: absolute;
@@ -152,13 +170,16 @@ Css of home page
 
     }
 
+    
+
     .c-case__titlebottom {
         font-size: 3.4rem;
         font-weight: 400;
         color: #231815;
-        letter-spacing: 1.5px;
+        letter-spacing: 0.1px;
         text-align: center;
-        margin-top: 60px;
+        margin-top: 126px;
+        transform: translateX(12px);
     }
 }
 
@@ -166,12 +187,13 @@ Css of home page
 .c-house {
     .c-house__title {
         text-transform: uppercase;
-        font-family: $sub-font1;
+        font-family: $sub-font2;
         font-weight: 300;
-        letter-spacing: 5.3px;
+        letter-spacing: 4.6px;
         color: #000;
         font-size: 4.8rem;
         text-align: center;
+        transform: translate(20px, 16px);
     }
 
     .c-house__list {}
@@ -181,35 +203,75 @@ Css of home page
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top: 20px;
+        margin-top: 62px;
     }
 
     .c-houseitem__left {
-        width: 55%;
+        width: 50%;
     }
 
-    .c-house__number {}
+    .c-house__number {
+        margin-top: -12px;
+        margin-left: 26px;
+    }
 
     .c-houseitem__title {
         position: relative;
+        margin-left: 102px;
+        transform: translate(4px, -30px);
     }
+
+    .c-houseitem__titletwo {
+        margin-top: -30px;
+        margin-left: 55px;
+        position: relative;
+    }
+    
 
     .c-houseitem__titletext {
         font-size: 2.8rem;
         color: #231815;
         font-weight: 700;
         display: block;
+        font-family: $sub-font1;
+        letter-spacing: 0.4px;
+        transform: translateY(37px);
+    }
+
+    .c-houseitem__titletextthree {
+        transform: translateY(45px);
+        margin-left: -1px;
+        letter-spacing: 3.3px;
+    }
+
+    .c-house__numbertwo {
+        margin-left: -25px;
+        margin-top: -5px;
     }
 
     .c-houseitem__right {
-        width: 45%;
+        width: 44.5%;
     }
 
     .c-houseitem__des {
         font-size: 2.1rem;
         color: #231815;
         font-weight: 400;
-        margin-top: 20px;
+        margin-top: 61px;
+        font-family: $sub-font1;
+        line-height: 1.6;
+        letter-spacing: 0.7px;
+    }
+
+    .c-houseitem__destwo {
+        margin-left: 22px;
+        transform: translateX(34px);
+    }
+    .c-houseitem__desthree{
+        margin-left: 106px;
+    transform: translateY(-22px);
+    line-height: 1.7;
+    letter-spacing: 0.7px;
     }
 
 
@@ -217,37 +279,44 @@ Css of home page
 
 // POINT
 .c-point {
-    background-color: #ededed;
+    background-color: $background-colormain;
     width: 100%;
-    margin-top: 194px;
-    // transform: translateX(-1px);
-    padding: 60px 30px 0;
+    margin-top: 164px;
+    padding: 60px 46px 0;
 
 
     .c-point__header {
         display: flex;
         justify-content: space-between;
-        top: -125px;
+        top: -131px;
         position: relative;
-        margin-left: 128px;
+        margin-left: 158px;
     }
 
     .c-header__title {
-        font-family: $sub-font1;
+        font-family: $sub-font2;
         font-weight: 300;
         font-size: 8.3rem;
+        letter-spacing: 8.1px;
 
     }
 
     .c-headertext {
+        font-family: $sub-font1;
         font-weight: 400;
         font-size: 3.4rem;
         color: #231815;
+        text-align: end;
+        transform: translate(7px, -6px);
     }
 
     .c-header__img {
+        width: 29%;
         position: relative;
-        top: -95px;
+        z-index: 1;
+        height: 100%;
+        margin-top: -98px;
+        left: 0.34%;
     }
 
     .c-point__list {
@@ -262,6 +331,10 @@ Css of home page
         width: calc(calc(100% / 4) - 20px);
         background: rgb(255, 255, 255);
         padding: 24px 20px;
+        font-family: $sub-font1;
+    }
+    .c-point__right{
+        margin: -11px 0px 0 auto;
     }
 
     .c-pointitem__img {
@@ -307,7 +380,7 @@ Css of home page
 
     .c-design__background {
         max-width: 1204px;
-        background-color: #ededed;
+        background-color: $background-colormain;
         height: 527px;
         margin-left: 37.2%;
         display: block;
@@ -319,11 +392,12 @@ Css of home page
 
     .c-design__right {
         position: relative;
-        right: -224px;
+        // right: -137px;
         bottom: -193px;
     }
 }
 
+// PLAN
 .c-plan {
     max-width: 1197px;
     width: 100%;
@@ -342,6 +416,336 @@ Css of home page
     }
 }
 
+// FINACE
 .c-finace {
     margin-top: 50px;
+    background-color: $background-colormain;
+
+    .c-finace__header {
+        font-weight: 400;
+        font-size: 3rem;
+        color: #fff;
+        background-color: #231815;
+        padding: 10px 30px;
+        max-width: 408px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .c-finace__content {
+        display: flex;
+        max-width: 1274px;
+        margin: 0 auto;
+
+    }
+
+    .c-finace__item {
+        background-color: #fafafa;
+        padding: 97px 75px;
+        color: #231815;
+        width: 605px;
+        height: 432px;
+        margin: 31px;
+        font-size: 2.2rem;
+    }
+
+    .c-finace__itemone {
+        p {
+            margin-bottom: 37px;
+
+        }
+    }
+
+    .c-finace__itemtwo {
+        position: relative;
+
+        .c-item__content {
+            p:nth-child(1) {
+                font-weight: 700;
+                font-size: 2.6rem;
+            }
+
+            h3 {
+                font-weight: 700;
+                font-size: 9rem;
+                color: #7a89a8;
+                display: flex;
+
+                span {
+                    font-size: 3.6rem;
+                    transform: translate(14px, 67px);
+                }
+            }
+
+            p:nth-child(2) {
+                font-weight: 400;
+                font-size: 2.2rem;
+            }
+
+        }
+    }
+}
+
+// BOOKING
+.c-booking {
+    max-width: 1724px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 68px 20px 0;
+
+    .c-booking__header {
+        font-size: 3.4rem;
+        font-weight: 400;
+        color: #231815;
+        text-align: center;
+
+        span {
+            color: #252a6d;
+        }
+    }
+
+    .c-booking__des {
+        text-align: center;
+        font-size: 2.7rem;
+        font-weight: 300;
+        color: #231815;
+
+    }
+
+    .c-booking__list {
+        display: flex;
+    }
+
+    .c-booking__item {
+        background-color: #565f64;
+        padding: 48px 25px 54px;
+        text-align: center;
+        position: relative;
+        margin: 20px;
+    }
+
+
+    .c-booking__item:first-child {
+        background-color: #231815;
+    }
+
+    .c-booking__item:last-child {
+        background-color: #7a89a8;
+    }
+
+    .c-booking__item:not(:last-child)::before {
+        content: "";
+        background: url(assets/icon/icon-next-booking.svg) top right no-repeat;
+        width: 13px;
+        height: 17px;
+        position: absolute;
+        top: 51%;
+        right: -13%;
+        margin: 0 20px;
+    }
+
+    .c-booking__icon {
+        width: 41px;
+
+    }
+
+    .c-booking__title {
+        font-size: 2.1rem;
+        font-weight: 400;
+        color: #fff;
+        position: relative;
+        margin-top: 20px;
+
+    }
+
+    .c-booking__title::after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 100%;
+        margin: 10px auto 0;
+        height: 1px;
+        background-color: #ededed;
+    }
+
+    .c-booking__des {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #fff;
+        margin-top: 30px;
+    }
+}
+
+// PREVENT
+.c-prevent {
+    max-width: 1196px;
+    width: 100%;
+    margin: 123px auto 107px;
+    display: block;
+
+    .c-prevent__header {
+        background: #231815;
+        padding: 60px 82px;
+    }
+
+    .c-prevent__headerone {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .c-prevent__textone {
+        border-radius: 36px;
+        color: #231815;
+        background-color: #fff;
+        font-size: 2.3rem;
+        font-weight: 700;
+        padding: 16px 5px;
+        margin-right: 26px;
+
+    }
+
+    .c-prevent__texttwo {
+        font-size: 3.2rem;
+        font-weight: 300;
+        color: #fff;
+
+    }
+
+    .c-prevent__des {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 300;
+        margin-top: 16px;
+
+    }
+
+    .c-prevent__list {
+        display: flex;
+        flex-wrap: wrap;
+        border-left: 1px solid #ededed;
+        border-right: 1px solid #ededed;
+        border-bottom: 1px solid #ededed;
+        padding: 37px 38px 36px;
+    }
+
+    .c-prevent__item {
+        border-right: 1px solid #ededed;
+        padding: 0 30px;
+        width: 20%;
+    }
+
+    .c-prevent__item:nth-child(-n+5) {
+        border-bottom: 1px solid #ededed;
+
+    }
+
+    .c-prevent__item:nth-child(5) {
+        border-right: unset;
+    }
+
+    .c-prevent__item:nth-child(10) {
+        border-right: unset;
+    }
+
+    .c-prevent__img {
+        width: 153px;
+        margin: 0 auto;
+        display: block;
+        margin: 23px auto;
+    }
+
+
+
+}
+
+// ACCESS
+.c-access {
+    display: flex;
+    width: 100%;
+
+    .c-access__left {
+        width: 50%;
+
+        iframe {
+            height: 100%;
+            width: 100%;
+
+        }
+
+    }
+
+    .c-access__right {
+        background-color: #ededed;
+        width: 50%;
+        position: relative;
+        min-height: 700px;
+
+    }
+
+    .c-access__content {
+        margin-top: 30px;
+        font-size: 2.8rem;
+        font-weight: 300;
+        max-width: 605px;
+        width: 100%;
+        margin: 13.9% auto 0;
+        padding: 0 0 0 7px;
+    }
+
+    .c-access__des {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .c-access__text {
+        color: #000;
+        font-size: 2.5rem;
+        font-weight: 400;
+        display: flex;
+        margin-bottom: 10px;
+
+    }
+
+    .c-access__contentleft {
+        background-color: #565f64;
+        padding: 5px 20px;
+        margin-right: 20px;
+    }
+
+
+}
+
+// FOOTERs
+.c-footer {
+    max-width: 1196px;
+    margin: 0 auto;
+
+
+    .c-footer__contact {
+        width: 99.8%;
+        border: 1px solid;
+        height: 283px;
+        margin: -1px 0 89px;
+        display: block;
+
+        h3 {
+            text-align: center;
+            font-size: 4.8rem;
+            font-weight: 300;
+            line-height: 6;
+            font-family: $sub-font1;
+            letter-spacing: 4.5px;
+            transform: translateX(-6px);
+
+        }
+
+    }
+
+    .c-footer__logo {
+        display: block;
+        width: 205px;
+        margin: 0 auto;
+        margin-bottom: 85px;
+    }
 }

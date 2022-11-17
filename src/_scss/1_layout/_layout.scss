@@ -1,13 +1,19 @@
 /* layout
 ------------------------------------------------------------*/
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: $main-fonts;
     font-size: 1.4rem;
     max-width: $base-width;
     min-width: 375px;
     line-height: 1.5;
-    
+    color: #231815;
+
 }
+
 //-------------------------------------------------------
 // main {
 //     // padding: 0px 0 100px;
@@ -37,6 +43,13 @@ body {
     width: 100%;
 }
 
+.c-wrapperhouse {
+    margin: 0 auto 60px;
+    max-width: 1305px;
+    padding: 0 40px;
+    width: 100%;
+}
+
 .c-wrapperpoint {
     max-width: 1740px;
     width: 100%;
@@ -51,3 +64,4 @@ body {
     top: -366px;
     display: flex;
 }
+

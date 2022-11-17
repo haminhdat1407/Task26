@@ -13,21 +13,31 @@ btn
     line-height: 1;
 }
 
-.c-buttondesign {
-    display: flex;
+// .c-buttondesign {
+//     display: flex;
+//     position: absolute;
+//     right: 0;
+//     margin-top: 20px;
+
+//     a {
+.c-buttonleft {
+    width: 54px;
+    display: block;
     position: absolute;
-    right: 0;
-    margin-top: 20px;
-
-    .c-buttonleft {
-        width: 45px;
-        display: block;
-    }
-
-    .c-buttonright {
-        width: 45px;
-        display: block;
-        margin-left: 10px;
-    }
-    
+    right: 50px;
+    bottom: -89px;
+    margin-right: 26px;
+ 
 }
+
+.c-buttonright {
+    width: 54px;
+    display: block;
+    right: 0;
+    bottom: -89px;
+    position: absolute;
+}
+//     }
+    
+    
+// }

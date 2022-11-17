@@ -12,6 +12,20 @@ img
         margin-left: 14px;
         display: block;
     }
+
+    .c-house__imgtwo {
+        margin-left: 27px;
+        margin-top: 32px;
+    }
+
+    .c-house__numberthree {
+        margin-top: -39px;
+        margin-left: 26px;
+    }
+    .c-house__imgthree{
+        margin-top: 36px;
+        margin-left: 14px;
+    }
 }
 
 .c-footerpoint__img {
@@ -19,4 +33,15 @@ img
     margin: 118px auto;
     max-width: 1192px;
     width: 100%;
+}
+
+.c-itemtwo__img {
+    width: 200px;
+    position: absolute;
+    // right: -50px;
+    top: -18px;
+}
+
+.c-footer__banner {
+    margin: 85px 0 92px;
 }

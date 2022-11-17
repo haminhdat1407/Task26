@@ -1,12 +1,16 @@
 $(document).ready(function(){
-  $('.c-design__item').slick({
+  $('.c-design__imglist').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
     arrows: true,
     draggable: false,
-    prevArrow: `<a href="#!" class="c-slick__arrow c-icon__arrowleft"><img src="./assets/img/icon/icon-arrow-left.svg" alt="Arrow left"></a>`,
-    nextArrow: `<a href="#!"  class="c-slick__arrow c-icon__arrowright"><img src="./assets/img/icon/icon-arrow-right.svg" alt="Arrow right"></a>`,
+    prevArrow: `<a href="#">
+    <img class="c-buttonleft" src="assets/icon/button-left.svg" alt="Design">
+  </a>`,
+    nextArrow:  ` <a href="#">
+    <img class="c-buttonright" src="assets/icon/button-right.svg" alt="Design">
+  </a>`,
     settings: {
       slidesToShow: 1,
       arrows: false,
