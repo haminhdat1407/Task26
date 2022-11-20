@@ -15,13 +15,14 @@ Css of home page
 
     .c-bannerinner {
         background-color: rgba(255, 255, 255, 0.49);
+        padding: 120px 30px 85px;
         max-width: 435px;
         width: 100%;
         height: 460px;
         position: absolute;
-        top: 31%;
-        left: 39.6%;
-        padding: 121px 0;
+        left: 51.8%;
+        top: 53.8%;
+        transform: translate(-54%, -51.8%);
       
 
         .c-bannerinner__logo {
@@ -63,6 +64,9 @@ Css of home page
         width: 100%;
         max-width: 1536px;
         margin: 0 auto;
+        // @include tab {
+
+        // }
 
     }
 
@@ -72,6 +76,10 @@ Css of home page
         transform: translateY(-31px);
         width: 31.1%;
         position: relative;
+        @include tab {
+            width: 70%;
+            margin: 0 auto 60px;
+        }
 
         .c-des {
             // font-family: $sub-font1;
@@ -206,8 +214,18 @@ Css of home page
         margin-top: 62px;
     }
 
+    .c-house__itemtwo {
+        @include tab {
+            flex-direction: column-reverse;
+        }
+    }
+
     .c-houseitem__left {
         width: 50%;
+        @include tab {
+            width: 84.3%;
+            margin: 0 auto;
+        }
     }
 
     .c-house__number {
@@ -256,6 +274,10 @@ Css of home page
 
     .c-houseitem__right {
         width: 44.5%;
+        @include tab {
+            width: 84.3%;
+            margin: 0 auto;
+        }
     }
 
     .c-houseitem__des {
@@ -331,8 +353,12 @@ Css of home page
         display: flex;
         justify-content: space-between;
         padding: 0 30px 77px;
-        
+        flex-wrap: wrap;
         margin-top: -122px;
+        @include tab {
+            width: 93%;
+            padding: 0 0 109px;
+        }
 
     }
 
@@ -343,6 +369,11 @@ Css of home page
         padding: 22px 20px 39px;
         margin-right: 4px;
         // font-family: $sub-font1;
+        @include tab {
+            width: 48.4%;
+            margin-bottom: 15px;
+        }
+        
     }
 
     .c-point__right {
@@ -454,6 +485,7 @@ Css of home page
         margin-top: 74px;
         width: 100%;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .c-plan__item {
@@ -783,14 +815,22 @@ Css of home page
     .c-prevent__header {
         background: #231815;
         padding: 61px 82px;
-        // font-family: $sub-font1;
         height: 214px;
+        width: 100%;
+        height: 214px;
+        background-color: #231815;
+        padding: 63px 0 150px;
+        transform: translateX(2px);
     }
 
     .c-prevent__headerone {
         display: flex;
         flex-wrap: wrap;
         margin-left: 3px;
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
     }
 
     .c-prevent__textone {
@@ -800,7 +840,7 @@ Css of home page
         font-size: 2.3rem;
         font-weight: 700;
         padding: 9px 28px;
-        margin-right: 44px;
+        margin-left: -16px;
 
     }
 
@@ -816,8 +856,9 @@ Css of home page
         font-size: 2rem;
         font-weight: 300;
         margin-top: 21px;
-        margin-left: 8px;
+        margin-left: 12px;
         letter-spacing: 0.9px;
+        text-align: center;
     }
 
     .c-prevent__inf {

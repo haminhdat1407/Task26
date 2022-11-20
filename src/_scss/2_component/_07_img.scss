@@ -11,7 +11,9 @@ img
         margin-top: 30px;
         margin-left: 14px;
         display: block;
+       
     }
+  
 
     .c-house__imgtwo {
         margin-left: 27px;
@@ -27,6 +29,14 @@ img
         margin-top: 36px;
         margin-left: 14px;
     }
+
+    .c-house__img {
+        @include tab {
+            margin: 30px auto 0;
+            display: block;
+            width: 100%;
+        }
+    }
 }
 
 .c-footerpoint__img {
@@ -36,14 +46,14 @@ img
     width: 100%;
 }
 
-.c-itemtwo__img {
-    width: 206px;
-    position: absolute;
-    top: -26px;
-    right: 0;
-    transform: translate(135px, -114px);
-    display: block;
-}
+// .c-itemtwo__img {
+//     width: 206px;
+//     position: absolute;
+//     top: -26px;
+//     right: 0;
+//     transform: translate(135px, -114px);
+//     display: block;
+// }
 
 .c-footer__banner {
     margin: 85px 0 92px;

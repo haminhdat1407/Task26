@@ -37,7 +37,7 @@ line
 //     transform: translateX(-50%);
 //     left: 47%;
 // }
-.c-access__title::after{
+.c-access__title::after {
     display: block;
     content: "";
     position: absolute;
@@ -49,7 +49,8 @@ line
     transform: translateX(-50%);
     left: 47%;
 }
-.c-finace__texttitle::after{
+
+.c-finace__texttitle::after {
     display: block;
     content: "";
     position: absolute;
@@ -57,5 +58,7 @@ line
     background-color: #cbcbcb;
     width: 57px;
     margin-top: 27px;
+    left: 48.5%;
+    transform: translateY(-48.5%);
 }
 
