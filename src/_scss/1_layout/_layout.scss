@@ -44,15 +44,25 @@ body {
 }
 
 .c-wrapperdesign {
-    max-width: 1500px;
-    margin: 0 auto;
-    width: 100%;
     position: relative;
-    top: -339px;
     display: flex;
+    padding-right: 3.75%;
+    margin: 79px 0 0 19%;
+    z-index: 1;
 }
 
-.c-wrappeaccess{
+.c-wrapperdesign::before {
+    content: "";
+    position: absolute;
+    top: -37%;
+    right: 0;
+    width: 77.3%;
+    height: 104%;
+    background-color: #ededed;
+    z-index: -1;
+}
+
+.c-wrappeaccess {
     max-width: 611px;
     width: 100%;
     margin: 13.9% auto 0;
