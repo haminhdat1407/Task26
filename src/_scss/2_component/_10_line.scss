@@ -10,4 +10,17 @@ line
     background: #000;
     display: block;
     margin: 30px 0;
+    
+}
+
+.c-line__design {
+    margin-bottom: 0;
+}
+
+.c-line__plan {
+    align-items: center;
+    margin: 27px auto;
+    height: 1px;
+    width: 60px;
+    transform: translateX(7px);
 }

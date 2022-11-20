@@ -8,6 +8,9 @@ text
     .u-text {
         color: #252a6d;
         font-size: 4.6rem;
+        margin-left: -12px;
+        transform: translateX(14px);
+        display: inline-block;
     }
 }
 
@@ -15,6 +18,14 @@ text
     .u-text {
         color: #252a6d;
         font-size: 3.6rem;
+        margin-right: -3px;
+    }
+
+    .u-textthree {
+        font-size: 3.6rem;
+        color: #252a6d;
+        margin-left: -10px;
+        margin-right: -9px;
     }
 }
 
@@ -22,13 +33,19 @@ text
     display: block;
     font-size: 2.2rem;
     font-weight: 300;
-    margin-right: 20px;
+    margin-left: 30px;
 }
-.c-point{
-    .u-text{
+
+.c-point {
+    .u-text {
         font-size: 4.6rem;
-    color: #252a6d;
-    transform: translateX(-10px);
-    display: inline-block;
+        color: #252a6d;
+        transform: translateX(-10px);
+        display: inline-block;
+    }
 }
+
+.c-tabletext__one {
+    transform: translate(3px, -2px);
+    letter-spacing: 1.2px;
 }

@@ -5,6 +5,12 @@ table
 /*
 ------------------------------------------------------------*/
 .c-plan__table {
+    font-family: $sub-font1;
+    font-weight: 300;
+    max-width: 1196px;
+    width: 100%;
+    margin: 96px auto 93px;
+
     li {
         padding: 31px 0 9px;
         display: flex;
@@ -15,11 +21,11 @@ table
         font-size: 2.5rem;
         color: #231815;
         font-weight: 300;
-        margin-left: 10px;
+        margin-left: 13px;
     }
 
     .c-table__left {
-        width: 20%;
+        width: 23%;
     }
 
     .c-table__right {
@@ -28,11 +34,64 @@ table
         flex-wrap: wrap;
 
         a {
+
             border: 1px solid #cbcbcb;
             font-size: 2rem;
-            margin-right: 22px;
+            margin-right: 20px;
             padding: 2px 12px 5px;
             border-radius: 5px;
+            letter-spacing: 0.8px;
+            transform: translate(2px, -1px);
+
+        }
+       
+
+    }
+
+    .c-table__actionone {
+        a:nth-child(1) {
+            transform: translate(5px, -1px);
+            padding: 2px 11px 5px;
+        }
+
+        a:nth-child(2) {
+            transform: translateX(1px);
+            letter-spacing: -1.5px;
+            padding: 2px 19px 5px;
+        }
+
+        a:nth-child(3) {
+            transform: translateX(-2px);
+            padding: 2px 17px 5px;
+        }
+
+        a:nth-child(4) {
+            transform: translateX(-7px);
+            letter-spacing: -1px;
+            padding: 2px 19px 5px;
+            margin-right: 17px;
+        }
+
+        a:nth-child(5) {
+            transform: translateX(-10px);
+            letter-spacing: 0;
+            margin-right: 0;
+            padding: 2px 15px 5px;
+        }
+    }
+
+    .c-table__actiotwo {
+        a:nth-child(2) {
+            transform: translateX(-1px);
+            letter-spacing: -2.7px;
+            padding: 2px 16px 5px;
+            margin-right: 15px;
+        }
+
+        a:nth-child(3) {
+            transform: translateX(6px);
+            letter-spacing: 0;
+            padding: 2px 19px 5px;
         }
     }
 }

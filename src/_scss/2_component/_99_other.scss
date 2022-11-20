@@ -5,6 +5,13 @@ other
 /*
 ------------------------------------------------------------*/
 //MARGIN 
+.c-bannerinner {
+    .u-textbanner {
+        transform: translateX(-13px);
+        display: inline-block;
+    }
+}
+
 .c-house {
     .c-house__titleone {
         // margin-left: 86px;
@@ -21,6 +28,30 @@ other
     margin: 0 auto  30px;
 }
 
-.c-case__titletwo{
-    
+.c-case__titletwo {
+    display: inline-block;
+    letter-spacing: -1.9px;
+    transform: translateX(3px);
+}
+
+.c-table__left {
+    .u-textone {
+        display: inline-block;
+        transform: translate(-7px, 3px);
+        letter-spacing: -3px;
+    }
+}
+
+.c-prevent__header {
+    .u-texttwo {
+        display: inline-block;
+        transform: translateX(5px);
+        letter-spacing: 3.3px;
+
+    }
+
+    .u-des {
+        display: inline-block;
+        margin-left: -6px;
+    }
 }

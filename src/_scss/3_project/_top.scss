@@ -22,6 +22,7 @@ Css of home page
         top: 31%;
         left: 39.6%;
         padding: 121px 0;
+      
 
         .c-bannerinner__logo {
             margin: 0 auto;
@@ -37,7 +38,9 @@ Css of home page
             display: block;
             padding: 30px 0;
             font-weight: 700;
-            transform: translateY(10px);
+            // transform: translateY(10px);
+            transform: translate(-3px, 8px);
+            letter-spacing: -1.5px;
         }
 
         .c-bannerinner__now {
@@ -48,10 +51,6 @@ Css of home page
     }
 
 }
-
-
-
-// }
 
 // CASE
 .c-case {
@@ -121,6 +120,7 @@ Css of home page
         text-align: center;
         font-family: $sub-font1;
         transform: translateX(16px);
+        color: #000;
     }
 
     .c-case__number {
@@ -128,7 +128,7 @@ Css of home page
         font-weight: 700;
         font-size: 21.4rem;
         color: #ededed;
-        transform: translateX(18px);
+        transform: translateX(21px);
         display: block;
     }
 
@@ -170,7 +170,7 @@ Css of home page
 
     }
 
-    
+
 
     .c-case__titlebottom {
         font-size: 3.4rem;
@@ -212,12 +212,16 @@ Css of home page
 
     .c-house__number {
         margin-top: -12px;
-        margin-left: 26px;
+        margin-left: 25px;
     }
 
     .c-houseitem__title {
         position: relative;
         margin-left: 102px;
+        transform: translate(4px, -38px);
+    }
+
+    .c-houseitem__titleone {
         transform: translate(4px, -30px);
     }
 
@@ -226,7 +230,8 @@ Css of home page
         margin-left: 55px;
         position: relative;
     }
-    
+
+
 
     .c-houseitem__titletext {
         font-size: 2.8rem;
@@ -235,13 +240,13 @@ Css of home page
         display: block;
         font-family: $sub-font1;
         letter-spacing: 0.4px;
-        transform: translateY(37px);
+        transform: translateY(38px);
     }
 
     .c-houseitem__titletextthree {
         transform: translateY(45px);
-        margin-left: -1px;
-        letter-spacing: 3.3px;
+        margin-left: 1px;
+        letter-spacing: 0.4px;
     }
 
     .c-house__numbertwo {
@@ -267,11 +272,14 @@ Css of home page
         margin-left: 22px;
         transform: translateX(34px);
     }
-    .c-houseitem__desthree{
-        margin-left: 106px;
-    transform: translateY(-22px);
-    line-height: 1.7;
-    letter-spacing: 0.7px;
+
+    .c-houseitem__desthree {
+        margin-left: 82px;
+        line-height: 1.7;
+        letter-spacing: 0.7px;
+        transform: translate(26px, -34px);
+
+
     }
 
 
@@ -311,46 +319,52 @@ Css of home page
     }
 
     .c-header__img {
-        width: 29%;
+        width: 31.4%;
         position: relative;
         z-index: 1;
         height: 100%;
-        margin-top: -98px;
-        left: 0.34%;
+        margin-top: -96px;
+        left: -0.1%;
     }
 
     .c-point__list {
         display: flex;
         justify-content: space-between;
         padding: 0 30px 77px;
+        
+        margin-top: -122px;
+
     }
 
     .c-point__item {
         color: #231815;
-        // width: 23.8%;
-        width: calc(calc(100% / 4) - 20px);
+        width: calc(25% - 20px);
         background: rgb(255, 255, 255);
-        padding: 24px 20px;
+        padding: 22px 20px 39px;
+        margin-right: 4px;
         font-family: $sub-font1;
     }
-    .c-point__right{
-        margin: -11px 0px 0 auto;
+
+    .c-point__right {
+        margin: -11px 0 0 auto;
     }
 
     .c-pointitem__img {
         width: 100%;
+        height: 257px;
+        object-fit: cover;
     }
 
     .c-pointitem__title {
         font-size: 2.3rem;
         font-weight: 400;
-        margin-top: 30px;
+        margin-top: 23px;
     }
 
     .c-pointitem__des {
         font-size: 1.9rem;
         font-weight: 300;
-        margin-top: 18px;
+        margin-top: 12px;
     }
 
 }
@@ -360,8 +374,7 @@ Css of home page
     .c-design__item {
         width: 75%;
         z-index: 11;
-        // transform: translateY(5px);
-        top: 0;
+        top: 4px;
         left: 0;
         position: relative;
     }
@@ -370,12 +383,17 @@ Css of home page
     .c-design__title {
         font-size: 2.7rem;
         color: #231815;
+        font-weight: 400;
+        margin-top: 23px;
+        line-height: 1.4;
     }
 
     .c-design__text {
         color: #231815;
         font-size: 1.9rem;
-        margin-top: 20px;
+        margin-top: 36px;
+        font-weight: 300;
+        line-height: 1.8;
     }
 
     .c-design__background {
@@ -388,23 +406,58 @@ Css of home page
         position: relative;
     }
 
-    .c-design__left {}
+    .c-design__left {
+        font-family: $sub-font1;
+        width: 43%;
+        margin-left: 154px;
+
+    }
+
+    .c-design__header {
+        letter-spacing: 4.6px;
+        margin-top: 1px;
+    }
 
     .c-design__right {
+        // position: relative;
+        // bottom: -116px;
+        // right: -279px;
         position: relative;
-        // right: -137px;
-        bottom: -193px;
+        bottom: -116px;
+        right: -133px;
+        width: 47.73%;
     }
+
+    
+
 }
 
 // PLAN
 .c-plan {
-    max-width: 1197px;
+
+    max-width: 1360px;
     width: 100%;
-    margin: 0 auto;
+    margin: -121px auto 0;
+
+    .c-plan__texttitle {
+        letter-spacing: 4.4px;
+        text-align: center;
+        transform: translateX(5px);
+    }
 
     .c-plan__imglist {
         display: flex;
+        margin-top: 74px;
+        width: 100%;
+    }
+
+    .c-plan__item {
+        width: 46.4%;
+        transform: translateX(84px);
+    }
+
+    .c-plan__item:first-child {
+        margin-right: 60px;
     }
 
     .c-plan__listtext {
@@ -412,30 +465,45 @@ Css of home page
         margin: 0 auto;
         justify-content: center;
         margin-top: 40px;
+        font-family: $sub-font1;
+        font-weight: 300;
 
     }
 }
 
 // FINACE
 .c-finace {
-    margin-top: 50px;
     background-color: $background-colormain;
+    padding-top: 90px;
+
+    .c-finace__texttitle {
+        text-align: center;
+        letter-spacing: 4.7px;
+        transform: translate(13px, 6px);
+    }
 
     .c-finace__header {
         font-weight: 400;
         font-size: 3rem;
         color: #fff;
         background-color: #231815;
-        padding: 10px 30px;
+        padding: 5px 28px 15px;
         max-width: 408px;
-        margin: 0 auto;
+        margin: 78px auto 16px;
+        letter-spacing: 1.4px;
         text-align: center;
+        font-family: $sub-font1;
+        display: block;
+
+        transform: translate(17px, 10px);
     }
 
     .c-finace__content {
         display: flex;
-        max-width: 1274px;
         margin: 0 auto;
+        display: flex;
+        max-width: 1375px;
+        padding: 10px 20px 78px;
 
     }
 
@@ -447,81 +515,184 @@ Css of home page
         height: 432px;
         margin: 31px;
         font-size: 2.2rem;
+        position: relative;
+
+        .c-item__content {
+            position: absolute;
+            margin: 0 auto;
+            top: 56.1%;
+            left: 35%;
+            transform: translate(-30%, -49%);
+            width: 70%;
+            font-family: $sub-font1;
+            font-weight: 400px;
+        
+        }
     }
 
     .c-finace__itemone {
         p {
             margin-bottom: 37px;
-
+            letter-spacing: -0.4px;
+            transform: translateY(2px);
         }
+
+        p:nth-child(3) {
+            transform: translate(5px, 1px);
+            letter-spacing: -0.4px;
+        }
+
+        p:nth-child(4) {
+            transform: translate(-1px, 0);
+            letter-spacing: -0.3px;
+        }
+
+    }
+}
+
+.c-finace__itemtwo {
+    position: relative;
+
+    .c-item__content {
+        font-family: $sub-font1;
+
+        p:nth-child(1) {
+            font-weight: 700;
+            font-size: 2.6rem;
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: 9rem;
+            color: #7a89a8;
+            display: flex;
+
+            span {
+                font-size: 3.6rem;
+                transform: translate(14px, 67px);
+            }
+        }
+
+        p:nth-child(2) {
+            font-weight: 400;
+            font-size: 2.2rem;
+        }
+
     }
 
-    .c-finace__itemtwo {
-        position: relative;
+    .c-item__contenttwo {
+        font-family: $sub-font1;
+        position: absolute;
+        margin: 0 auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
 
-        .c-item__content {
-            p:nth-child(1) {
-                font-weight: 700;
-                font-size: 2.6rem;
-            }
-
-            h3 {
-                font-weight: 700;
-                font-size: 9rem;
-                color: #7a89a8;
-                display: flex;
-
-                span {
-                    font-size: 3.6rem;
-                    transform: translate(14px, 67px);
-                }
-            }
-
-            p:nth-child(2) {
-                font-weight: 400;
-                font-size: 2.2rem;
-            }
-
+        .c-itemtwo__textone {
+            font-weight: 700;
+            margin-top: -17px;
+            margin-left: 6px;
+            color: #231815;
+            letter-spacing: -0.7px;
+            font-size: 2.6rem;
         }
+     
+
+        h3 {
+            font-weight: 700;
+            font-size: 9rem;
+            color: #7a89a8;
+            display: flex;
+            transform: translate(-2px, 0);
+
+            span {
+                font-size: 3.6rem;
+              
+                transform: translate(10px, 66px);
+            }
+        }
+
+        .c-itemtwo__text {
+            display: block;
+            transform: translate(-2px, 17px);
+            letter-spacing: -0.8px;
+        }
+
     }
 }
 
 // BOOKING
 .c-booking {
-    max-width: 1724px;
+    max-width: 1751px;
     width: 100%;
     margin: 0 auto;
     padding: 68px 20px 0;
+    
 
     .c-booking__header {
         font-size: 3.4rem;
         font-weight: 400;
         color: #231815;
         text-align: center;
+        letter-spacing: -1.4px;
+        transform: translate(-27px, -3px);
 
         span {
             color: #252a6d;
+            font-size: 4.6rem;
+            letter-spacing: 10.3px;
+            margin-right: -56px;
         }
     }
 
-    .c-booking__des {
+    .c-booking__destitle {
         text-align: center;
         font-size: 2.7rem;
         font-weight: 300;
         color: #231815;
+        font-family: $sub-font1;
+        margin-top: 21px;
+
+        .c-textone {
+            display: inline-block;
+            transform: translateX(17px);
+        }
+
+        p:nth-child(1) {
+            transform: translateX(-5px);
+        }
+
+        p:nth-child(2) {
+            margin-left: 54px;
+        }
 
     }
 
-    .c-booking__list {
+    .c-booking__process {
         display: flex;
+       
+    }
+
+    .c-booking__list {
+        margin: 70px 0 0 30px;
     }
 
     .c-booking__item {
         background-color: #565f64;
-        padding: 48px 25px 54px;
-        text-align: center;
+        // padding: 48px 25px 54px;
+        // text-align: center;
+        // position: relative;
+        // margin: 20px;
+        font-family: $sub-font1;
+        // ------
         position: relative;
-        margin: 20px;
+        padding: 50px 1%;
+        background-color: #565f64;
+        color: #fff;
+        width: 20%;
+        text-align: center;
+        
     }
 
 
@@ -540,57 +711,67 @@ Css of home page
         height: 17px;
         position: absolute;
         top: 51%;
-        right: -13%;
-        margin: 0 20px;
+        right: -35px;
+        transform: translateY(-51%);
+    }
+
+    .c-booking__item:not(:first-child) {
+        margin-left: 3.8%;
     }
 
     .c-booking__icon {
+        display: block;
+        margin: 0 auto;
         width: 41px;
-
     }
+
+   
 
     .c-booking__title {
+        margin-top: 22px;
         font-size: 2.1rem;
         font-weight: 400;
-        color: #fff;
-        position: relative;
-        margin-top: 20px;
-
     }
 
-    .c-booking__title::after {
-        position: absolute;
-        display: block;
-        content: "";
-        width: 100%;
-        margin: 10px auto 0;
-        height: 1px;
-        background-color: #ededed;
-    }
+    // .c-booking__title::after {
+    //     font-size: 1.6rem;
+    //     font-weight: 400;
+    //     padding-top: 14px;
+    //     margin-top: 12px;
+    //     border-top: 0.5px solid #fff;
+    //     margin-bottom: 11px;
+    // }
 
     .c-booking__des {
         font-size: 1.6rem;
         font-weight: 400;
-        color: #fff;
-        margin-top: 30px;
+        padding-top: 14px;
+        margin-top: 12px;
+        border-top: 0.5px solid #fff;
+        margin-bottom: 11px;
+        margin-bottom: -3px;
     }
 }
 
 // PREVENT
 .c-prevent {
+    transform: translateX(2px);
     max-width: 1196px;
     width: 100%;
-    margin: 123px auto 107px;
+    margin: 124px auto 107px;
     display: block;
 
     .c-prevent__header {
         background: #231815;
-        padding: 60px 82px;
+        padding: 61px 82px;
+        font-family: $sub-font1;
+        height: 214px;
     }
 
     .c-prevent__headerone {
         display: flex;
         flex-wrap: wrap;
+        margin-left: 3px;
     }
 
     .c-prevent__textone {
@@ -599,8 +780,8 @@ Css of home page
         background-color: #fff;
         font-size: 2.3rem;
         font-weight: 700;
-        padding: 16px 5px;
-        margin-right: 26px;
+        padding: 9px 28px;
+        margin-right: 44px;
 
     }
 
@@ -608,15 +789,23 @@ Css of home page
         font-size: 3.2rem;
         font-weight: 300;
         color: #fff;
-
+        margin-top: 5px;
     }
 
     .c-prevent__des {
         color: #fff;
         font-size: 2rem;
         font-weight: 300;
-        margin-top: 16px;
+        margin-top: 21px;
+        margin-left: 8px;
+        letter-spacing: 0.9px;
+    }
 
+    .c-prevent__inf {
+        font-family: $sub-font1;
+        font-weight: 400;
+        font-size: 1.5rem;
+        text-align: center;
     }
 
     .c-prevent__list {
@@ -625,7 +814,7 @@ Css of home page
         border-left: 1px solid #ededed;
         border-right: 1px solid #ededed;
         border-bottom: 1px solid #ededed;
-        padding: 37px 38px 36px;
+        padding: 37px 38px 65px;
     }
 
     .c-prevent__item {
@@ -720,7 +909,8 @@ Css of home page
 .c-footer {
     max-width: 1196px;
     margin: 0 auto;
-
+    transform: translateX(2px);
+    margin-top: 3px;
 
     .c-footer__contact {
         width: 99.8%;
@@ -736,8 +926,9 @@ Css of home page
             line-height: 6;
             font-family: $sub-font1;
             letter-spacing: 4.5px;
-            transform: translateX(-6px);
-
+            transform: translate(-5px, 0);
+            text-transform: uppercase;
+            font-family: $sub-font2;
         }
 
     }
@@ -747,5 +938,6 @@ Css of home page
         width: 205px;
         margin: 0 auto;
         margin-bottom: 85px;
+        transform: translate(-2px, -4px);
     }
 }
