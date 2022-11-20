@@ -24,3 +24,15 @@ line
     width: 60px;
     transform: translateX(7px);
 }
+.c-titlesection::after{
+    display: block;
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #cbcbcb;
+    width: 73px;
+    margin-top: 17px;
+    margin-left: -3px;
+    transform: translateX(-50%);
+    left: 47%;
+}
