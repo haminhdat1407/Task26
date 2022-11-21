@@ -1353,6 +1353,10 @@ Css of home page
         font-weight: 400;
         font-size: 1.5rem;
         text-align: center;
+        @include sp {
+            font-size: 0.9rem;
+            margin-bottom: 9px;
+        }
     }
 
     .c-prevent__list {
@@ -1362,6 +1366,9 @@ Css of home page
         border-right: 1px solid #ededed;
         border-bottom: 1px solid #ededed;
         padding: 37px 38px 51px;
+        @include sp {
+            padding: 37px 20px 40px;
+        }
     }
 
     .c-prevent__item {
@@ -1372,6 +1379,9 @@ Css of home page
         @include tb {
             width: 50%;
             border-bottom: 1px solid #ededed;
+        }
+        @include sp {
+            padding: 0 15px;
         }
     }
 
@@ -1422,7 +1432,19 @@ Css of home page
     }
 
 
+    .u-pcprevent {
+        @include sp {
+            display: none;
+        }
+    }
 
+    .u-spprevent {
+        display: none;
+        @include sp {
+            display: flex;
+        }
+    }
+        
 }
 
 // ACCESS

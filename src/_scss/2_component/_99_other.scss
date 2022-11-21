@@ -60,10 +60,20 @@ other
     .u-inf1 {
         margin-left: -10px;
         letter-spacing: -1px;
+        @include sp {
+            transform: translate(8px, 11.5px);
+            line-height: 1.7;
+            letter-spacing: -0.7px;
+        }
     }
 
     .u-inf2 {
         margin-top: 27px;
+        @include sp {
+            transform: translate(3px, -6px);
+            line-height: 1.6;
+            letter-spacing: -0.8px;
+        }
     }
 
     .u-inf3 {
@@ -86,11 +96,20 @@ other
 
     .u-inf6 {
         transform: translate(-6px, 3px);
+        @include sp {
+            transform: translate(7px, 4px);
+            letter-spacing: -0.8px;
+        }
     }
 
     .u-inf7 {
         transform: translate(-1px, 1px);
         letter-spacing: -1px;
+        @include sp{
+            transform: translate(4px, 1px);
+            letter-spacing: -0.8px;
+            line-height: 1.6;
+        }
     }
 
     .u-inf8 {
