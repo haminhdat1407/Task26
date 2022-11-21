@@ -1,6 +1,8 @@
 /* layout
 ------------------------------------------------------------*/
-html {
+html,
+body {
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -21,6 +23,10 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 80px 40px 0;
+    @include sp {
+        max-width: 375px;
+        padding: 51px 0 0;
+    }
 }
 
 .l-containerhouse {
@@ -41,14 +47,26 @@ body {
     max-width: 1740px;
     width: 100%;
     margin: 0 auto;
+    @include sp {
+        max-width: 375px;
+    }
 }
 
 .c-wrapperdesign {
     position: relative;
+    flex-wrap: wrap;
     display: flex;
     padding-right: 3.75%;
     margin: 79px 0 0 19%;
     z-index: 1;
+    @include tb {
+        margin-left: 0%;
+        margin-bottom: 49px;
+    }
+    @include sp{
+        padding: 12px 8.5%;
+        margin: 37px 0 0 0;
+    }
 }
 
 .c-wrapperdesign::before {
@@ -60,6 +78,11 @@ body {
     height: 104%;
     background-color: #ededed;
     z-index: -1;
+    @include sp{
+        top: -18%;
+    width: 52%;
+    height: 58.4%;
+    }
 }
 
 .c-wrappeaccess {

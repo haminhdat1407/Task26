@@ -10,6 +10,23 @@
 .sp-only {
     display: none;
 }
+
+.tb-only {
+    display: none;
+}
+
+// .pc-only {
+//     display: none;
+// }
+// @include sp {
+//     .pc-only {
+//         display: none;
+//     }
+
+//     .sp-only {
+//         display: block;
+//     }
+// }
 @include sp {
     .pc-only {
         display: none;

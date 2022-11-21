@@ -23,7 +23,7 @@
     </header>
     <div class="p-top">
       <!-- CASE -->
-    
+
       <section class="c-case">
         <div class="l-container ">
           <h1 class="c-case__title">家づくりの、こんな不安やお悩みないですか？</h1>
@@ -39,13 +39,23 @@
               </div>
             </div>
             <!-- CASE2 -->
-            <div class="c-itemcase">
+            <div class="c-itemcase pc-only ">
               <span class="c-case__number">
                 02
               </span>
               <p class="c-case__text">case</p>
               <div class="c-case__des">
                 <p class="c-note">いろいろとこだわった</p>
+                <p class="c-des">理想の家って実現できるの？</p>
+              </div>
+            </div>
+            <div class="c-itemcase sp-only ">
+              <span class="c-case__numbersp">
+                02
+              </span>
+              <p class="c-case__textsp">case</p>
+              <div class="c-case__dessp">
+                <p class="c-notesp">いろいろとこだわった</p>
                 <p class="c-des">理想の家って実現できるの？</p>
               </div>
             </div>
@@ -62,7 +72,9 @@
               </div>
             </div>
           </div>
-          <h2 class="c-case__titlebottom">はじめての家づくりが具体的に進む、ご来店の <span class="u-text">3&nbsp;つのメリット</span> </h2>
+          <h2 class="c-case__titlebottom pc-only">はじめての家づくりが具体的に進む、ご来店の <span class="u-text">3&nbsp;つのメリット</span> </h2>
+          <h2 class="c-case__titlebottom sp-only">はじめての家づくりが具体的に進む、<br> ご来店の <span class="u-text">3&nbsp;つのメリット</span>
+          </h2>
         </div>
       </section>
 
@@ -73,7 +85,8 @@
           <div class="c-house__item c-wrapperhouse">
             <div class="c-houseitem__left">
               <div>
-                <img class="c-house__number" src="../../assets/img/number1-house.png" alt="実物を見て触って体感できます!">
+                <img class="c-house__number c-house__numberone" src="../../assets/img/number1-house.png"
+                  alt="実物を見て触って体感できます!">
                 <div class="c-houseitem__title c-houseitem__titleone">
                   <h3 class="c-houseitem__titletext c-house__titleone ">実物を見て触って<span class="u-text">体感</span>できます!</h3>
                   <img class="c-iconhouse" src="../../assets/icon/icon-house.svg" alt="実物を見て触って体感できます!">
@@ -94,7 +107,8 @@
               <img class="c-house__img c-house__imgtwo" src="../../assets/img/house2.png" alt="実物を見て触って体感できます!">
             </div>
             <div class="c-houseitem__right">
-              <img class="c-house__numbertwo" src="../../assets/img/number2-house.png" alt="実物を見て触って体感できます!">
+              <img class="c-house__number c-house__numbertwo" src="../../assets/img/number2-house.png"
+                alt="実物を見て触って体感できます!">
               <div class="c-houseitem__titletwo ">
                 <h3 class="c-houseitem__titletext c-house__titleone ">土地情報<span class="u-text">1000件以上</span>が見放題!
                 </h3>
@@ -110,7 +124,8 @@
 
           <div class="c-house__item c-wrapperhouse">
             <div class="c-houseitem__left">
-              <img class="c-house__numberthree" src="../../assets/img/number3-house.png" alt="実物を見て触って体感できます!">
+              <img class=" c-house__number c-house__numberthree" src="../../assets/img/number3-house.png"
+                alt="実物を見て触って体感できます!">
               <div class="c-houseitem__title">
                 <h3 class="c-houseitem__titletext c-houseitem__titletextthree">お客様に合った <span
                     class="u-textthree">住宅ローン</span> を診断!</h3>
@@ -169,10 +184,14 @@
               </p>
             </div> -->
           </div>
+          <img class="c-header__imgsp" src="assets/img/point-img.png" alt="RECOMMENDED POINT">
         </div>
 
         <a class="c-footerpoint">
-          <img class="c-footerpoint__img" src="assets/img/point-footer.png" alt="RECOMMENDED POINT">
+          <picture>
+            <source media="(max-width: 767px)"  class="c-footerpoint__img" srcset="assets/img/point-banner-sp.png" alt="RECOMMENDED POINT">
+            <img class="c-footerpoint__img" src="assets/img/point-footer.png" alt="RECOMMENDED POINT">
+          </picture>
         </a>
       </section>
 
@@ -205,7 +224,7 @@
               年齢や性別を意識しない誰にでも愛される空間です。</p>
           </div>
           <div class="c-design__right">
-            <iframe width="702" height="391" src="https://www.youtube.com/embed/GtH-3_jjTvQ"
+            <iframe src="https://www.youtube.com/embed/GtH-3_jjTvQ"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
@@ -245,8 +264,7 @@
               <div class="c-tabletext c-table__right">木造2階建て</div>
             </li>
             <li>
-              <div class="c-tabletext c-table__left">設備<span class
-                u-textone>・仕様</span></div>
+              <div class="c-tabletext c-table__left c-table__textthree">設備<span class u-textone>・仕様</span></div>
               <div class="c-table__right c-table__actionone">
                 <a href="#">W断熱/TOPS工法</a>
                 <a href="#">無垢材・自然素材</a>
@@ -272,7 +290,6 @@
       <!-- FINANCE -->
       <section class="c-finace">
         <h3 class="c-titlesection c-finace__texttitle ">Finance</h3>
-        <!-- <span class="c-line c-textcenter"></span> -->
         <p class="c-finace__header">3,400&nbsp;万円借入の場合</p>
         <div class="c-finace__content">
           <div class="c-finace__item c-finace__itemone ">
@@ -283,10 +300,10 @@
               <p>返済期間・・・・・・・・・・・・・35年</p>
             </div>
 
-
           </div>
           <div class="c-finace__item c-finace__itemtwo">
             <div class="c-item__contenttwo">
+              <img class="c-itemtwo__img" src="assets/icon/icon-finance.svg" alt="月々のお支払い">
               <p class="c-itemtwo__textone">月々のお支払い</p>
               <h3>91,682<span>円</span> </h3>
               <p class="c-itemtwo__text">土地付建物販売価格　3,400&nbsp;万円&emsp;(税込)</p>
@@ -419,28 +436,28 @@
         </div>
         <div class="c-access__right">
           <div class="c-wrappeaccess">
-          <h3 class="c-titlesection c-textcenter c-access__title">Access</h3>
-          <p class="c-access__des">完全ご予約制見学会</p>
+            <h3 class="c-titlesection c-textcenter c-access__title">Access</h3>
+            <p class="c-access__des">完全ご予約制見学会</p>
 
-          <ul class="c-access__content">
-            <li class="c-access__text">
-              <span class="c-access__contentleft">開催日</span>
-              <p class="c-content__rightone">8<span>月20日</span>（土)・21日（日）
-              </p>
-            </li>
-            <li class="c-access__text">
-              <span class="c-access__contentleft">時間</span>
-              <p class="c-content__righttwo">10：00～ <span>17：00 ※完全予約制</span>
-              </p>
-            </li>
-            <li class="c-access__text">
-              <span class="c-access__contentleft">開催場所</span>
-              <p class="c-content__rightthree">〒000-0000 愛媛県今治市&nbsp;000-0
-              </p>
-            </li>
-            <li class="c-access__desright">※車でお越しの際は、ナビで上記住所を設定してください。</li>
-          </ul>
-        </div>
+            <ul class="c-access__content">
+              <li class="c-access__text">
+                <span class="c-access__contentleft">開催日</span>
+                <p class="c-content__rightone">8<span>月20日</span>（土)・21日（日）
+                </p>
+              </li>
+              <li class="c-access__text">
+                <span class="c-access__contentleft">時間</span>
+                <p class="c-content__righttwo">10：00～ <span>17：00 ※完全予約制</span>
+                </p>
+              </li>
+              <li class="c-access__text">
+                <span class="c-access__contentleft">開催場所</span>
+                <p class="c-content__rightthree">〒000-0000 愛媛県今治市&nbsp;000-0
+                </p>
+              </li>
+              <li class="c-access__desright">※車でお越しの際は、ナビで上記住所を設定してください。</li>
+            </ul>
+          </div>
         </div>
       </section>
 
