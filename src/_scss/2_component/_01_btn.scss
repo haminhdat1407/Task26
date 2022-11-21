@@ -21,9 +21,9 @@ btn
     right: 47px;
     bottom: -89px;
     margin-right: 26px;
-    @include sp{
+    @include sp {
         right: 45px;
-     width: 32px;
+        width: 32px;
         bottom: -44px;
         margin-right: 0;
     }
@@ -36,10 +36,10 @@ btn
     right: 0;
     bottom: -89px;
     position: absolute;
-    @include sp{
+    @include sp {
         bottom: -44px;
-    right: 2px;
-    width: 32px;
+        right: 2px;
+        width: 32px;
     }
 }
 //     }

@@ -10,7 +10,7 @@ table
     max-width: 1196px;
     width: 100%;
     margin: 96px auto 93px;
-    @include sp{
+    @include sp {
         width: 92.8%;
         height: 195px;
         margin: 15px auto 61px;
@@ -21,14 +21,15 @@ table
         padding: 31px 0 9px;
         display: flex;
         border-bottom: 1px solid;
-        @include sp{
+        @include sp {
             padding: 16px 0 5px;
         }
         
     }
-    .c-table__textthree{
-        @include sp{
-        margin-top: 13px;
+
+    .c-table__textthree {
+        @include sp {
+            margin-top: 13px;
 
         }
     }
@@ -38,7 +39,7 @@ table
         color: #231815;
         font-weight: 300;
         margin-left: 13px;
-        @include sp{
+        @include sp {
             font-size: 1.2rem;
             letter-spacing: 0.4px;
         }
@@ -46,7 +47,7 @@ table
 
     .c-table__left {
         width: 23%;
-        @include sp{
+        @include sp {
             transform: translateX(-6px);
             width: 35%;
         }
@@ -66,7 +67,7 @@ table
             border-radius: 5px;
             letter-spacing: 0.8px;
             transform: translate(2px, -1px);
-            @include sp{
+            @include sp {
                 font-size: 0.8rem;
                 margin-right: 0;
                 border-radius: 2px;

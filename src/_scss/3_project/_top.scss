@@ -682,8 +682,8 @@ Css of home page
         top: 4px;
         left: 0;
         position: relative;
-        @include sp{
-           width: 98%;
+        @include sp {
+            width: 98%;
         }
     }
 
@@ -694,7 +694,7 @@ Css of home page
         font-weight: 400;
         margin-top: 23px;
         line-height: 1.4;
-        @include sp{
+        @include sp {
             font-size: 1.4rem;
             letter-spacing: 0.038em;
             margin-bottom: 18px;
@@ -707,7 +707,7 @@ Css of home page
         margin-top: 36px;
         font-weight: 300;
         line-height: 1.8;
-        @include sp{
+        @include sp {
             font-size: 1rem;
             letter-spacing: -0.058em;
             line-height: 1.73;
@@ -735,7 +735,7 @@ Css of home page
             margin-left: 0%;
             margin-bottom: 49px;
         }
-        @include sp{
+        @include sp {
             width: 100%;
         }
 
@@ -756,20 +756,21 @@ Css of home page
             width: 100%;
             margin: 0 auto;
         }
-        @include sp{
+        @include sp {
             width: 100%;
             height: 168px;
             margin: 0 auto;
         }
+
         iframe {
             width: 100%;
             max-width: 700px;
             height: 390px;
-            @include sp{
+            @include sp {
                 width: 79.8%;
-         margin: 0 auto;
-             display: block;
-             height: 100%;
+                margin: 0 auto;
+                display: block;
+                height: 100%;
             }
         }
     }
@@ -784,7 +785,7 @@ Css of home page
     max-width: 1360px;
     width: 100%;
     margin: 0 auto;
-    @include sp{
+    @include sp {
         max-width: 375px;
     }
 
@@ -804,7 +805,7 @@ Css of home page
 
     .c-plan__item {
         width: 46.4%;
-        @include sp{
+        @include sp {
             position: relative;
             padding-bottom: 43px;
             width: 50%;
@@ -814,7 +815,7 @@ Css of home page
 
     .c-itemone {
         transform: translateX(84px);
-        @include sp{
+        @include sp {
             transform: unset;
 
 
@@ -824,22 +825,22 @@ Css of home page
     .c-itemtwo {
         transform: translateX(-22px);
         margin-top: 18px;
-        @include sp{
+        @include sp {
             transform: unset;
             margin-top: 0;
         }
 
         img:nth-child(2) {
             transform: translate(69px, -32px);
-            @include sp{
-                transform: translate(41px, 0px);
+            @include sp {
+                transform: translate(41px, 0);
             }
         }
     }
 
     .c-plan__item:first-child {
         margin-right: 60px;
-        @include sp{
+        @include sp {
             margin-right: 0;
         }
     }
@@ -853,12 +854,12 @@ Css of home page
         margin-top: 22px;
         font-weight: 300;
         margin-left: -10px;
-        @include sp{
+        @include sp {
             display: unset;
-             // /* line-height: 1.7; */
-   margin-top: 29px; 
-   margin-left: 0; 
-   text-align: center;
+            // /* line-height: 1.7; */
+            margin-top: 29px;
+            margin-left: 0;
+            text-align: center;
         }
 
     }
@@ -868,7 +869,7 @@ Css of home page
 .c-finace {
     background-color: $background-colormain;
     padding-top: 90px;
-    @include sp{
+    @include sp {
         margin: 0 auto;
         padding: 34px 15px 0;
     }
@@ -891,10 +892,10 @@ Css of home page
         text-align: center;
         display: block;
         transform: translate(17px, 10px);
-        @include sp{
+        @include sp {
             max-width: 204px;
             height: 32px;
-           margin: 30px auto 0;
+            margin: 30px auto 0;
             font-size: 1.5rem;
             letter-spacing: 0.2px;
             transform: translateY(-2px);
@@ -910,9 +911,9 @@ Css of home page
         max-width: 1375px;
         width: 100%;
         padding: 10px 20px 78px;
-        @include sp{
+        @include sp {
             margin-top: 24px;
-            padding: 0 0 40px 0;
+            padding: 0 0 40px;
             max-width: 335px;
         }
 
@@ -952,6 +953,12 @@ Css of home page
             margin-bottom: 37px;
             letter-spacing: -0.4px;
             transform: translateY(2px);
+            @include sp {
+                font-size: 1.1rem;
+                letter-spacing: -0.3px;
+                line-height: 3.1;
+                margin-bottom: 0;
+            }
         }
 
         p:nth-child(3) {
@@ -1013,6 +1020,10 @@ Css of home page
             color: #231815;
             letter-spacing: -0.7px;
             font-size: 2.6rem;
+            @include sp {
+                font-size: 1.3rem;
+                margin-left: 1px;
+            }
         }
 
 
@@ -1022,11 +1033,19 @@ Css of home page
             color: #7a89a8;
             display: flex;
             transform: translate(-1px, 4px);
+            @include sp {
+                font-size: 4.5rem;
+            }
 
             span {
                 font-size: 3.6rem;
 
                 transform: translate(10px, 66px);
+                @include sp {
+                    font-size: 1.8rem;
+                    margin-left: 5px;
+                    transform: translate(10px, 26px);
+                }
             }
         }
 
@@ -1034,6 +1053,13 @@ Css of home page
             display: block;
             transform: translate(-2px, 17px);
             letter-spacing: -0.8px;
+            @include sp {
+                font-size: 1.1rem;
+                letter-spacing: -0.2px;
+                transform: translateY(8px);
+                transform: translateY(8px);
+                margin-left: -2px;
+            }
         }
 
     }
@@ -1045,6 +1071,10 @@ Css of home page
     width: 100%;
     margin: 0 auto;
     padding: 68px 20px 0;
+    @include sp {
+        max-width: 375px;
+        padding: 50px 0 0;
+    }
 
 
     .c-booking__header {
@@ -1054,11 +1084,22 @@ Css of home page
         text-align: center;
         letter-spacing: -1.4px;
         transform: translateX(7px);
+        @include sp {
+            font-size: 1.7rem;
+            transform: translateX(0);
+            letter-spacing: 0;
+            margin-left: 0;
+            margin-top: -1px;
+        }
 
         span {
             color: #252a6d;
             font-size: 4.6rem;
             letter-spacing: 10.3px;
+            @include sp {
+                font-size: 2.3rem;
+                letter-spacing: 5.6px;
+            }
         }
     }
 
@@ -1069,6 +1110,14 @@ Css of home page
         color: #231815;
         // font-family: $sub-font1;
         margin-top: 21px;
+        @include sp {
+            font-size: 1.4rem;
+            margin-top: 22px;
+            transform: translateX(0);
+            letter-spacing: -0.5px;
+            margin-left: 0;
+            line-height: 0;
+        }
 
         .c-textone {
             display: inline-block;
@@ -1081,6 +1130,10 @@ Css of home page
 
         p:nth-child(2) {
             margin-left: 54px;
+            @include sp {
+                letter-spacing: -0.5px;
+                margin: 18px 0 45px 6px;
+            }
         }
 
     }
@@ -1101,6 +1154,9 @@ Css of home page
 
     .c-booking__list {
         margin: 70px 0 0 30px;
+        @include sp {
+            margin: 45px auto 0;
+        }
     }
 
     .c-booking__item {
@@ -1121,6 +1177,9 @@ Css of home page
         @include tb {
             width: 42.4%;
             margin-bottom: 23px;
+        }
+        @include sp {
+            padding: 25px 0 0;
         }
 
     }
@@ -1143,14 +1202,24 @@ Css of home page
         top: 51%;
         right: -35px;
         transform: translateY(-51%);
+        @include sp {
+            width: 5px;
+            height: 10px;
+            right: -20px;
+        }
     }
 
-    .c-booking__item:not(:first-child) {}
+    .c-booking__item:not(:first-child) {
+        
+    }
 
     .c-booking__icon {
         display: block;
         margin: 0 auto;
         width: 41px;
+        @include sp {
+            width: 20px;
+        }
     }
 
 
@@ -1159,6 +1228,10 @@ Css of home page
         margin-top: 22px;
         font-size: 2.1rem;
         font-weight: 400;
+        @include sp {
+            font-size: 1.1rem;
+            margin-top: 8px;
+        }
     }
 
     // .c-booking__title::after {
@@ -1178,6 +1251,10 @@ Css of home page
         border-top: 0.5px solid #fff;
         margin-bottom: 11px;
         margin-bottom: -3px;
+        @include sp {
+            font-size: 0.8rem;
+            margin-bottom: 13px;
+        }
     }
 }
 
@@ -1188,6 +1265,11 @@ Css of home page
     width: 100%;
     margin: 124px auto 107px;
     display: block;
+    @include sp {
+        width: 88%;
+        margin: 39px auto 59px;
+        transform: translateX(-2px);
+    }
 
     .c-prevent__header {
         background: #231815;
@@ -1198,6 +1280,10 @@ Css of home page
         background-color: #231815;
         padding: 63px 0 150px;
         transform: translateX(2px);
+        @include sp {
+            padding: 26px 50px;
+            height: 186px;
+        }
     }
 
     .c-prevent__headerone {
@@ -1222,6 +1308,11 @@ Css of home page
         @include tb {
             margin: 0 auto;
         }
+        @include sp {
+            font-size: 1.2rem;
+            width: 119px;
+            height: 25px;
+        }
 
     }
 
@@ -1230,6 +1321,13 @@ Css of home page
         font-weight: 300;
         color: #fff;
         margin-top: 5px;
+        @include sp {
+            font-size: 1.6rem;
+            text-align: center;
+            margin-top: 13px;
+            transform: translateY(9px);
+            line-height: 1.1;
+        }
     }
 
     .c-prevent__des {
@@ -1240,6 +1338,14 @@ Css of home page
         margin-left: 12px;
         letter-spacing: 0.9px;
         text-align: center;
+        @include sp {
+            font-size: 1rem;
+            letter-spacing: 0.2px;
+            margin: 23px 21px 0;
+            transform: translate(0, -4px);
+            line-height: 1.6;
+        }
+       
     }
 
     .c-prevent__inf {

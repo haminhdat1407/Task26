@@ -15,10 +15,10 @@ line
 
 .c-line__design {
     margin-bottom: 0;
-   @include sp{
-    width: 28px;
-    margin: 16px 0 10px;
-   }
+    @include sp {
+        width: 28px;
+        margin: 16px 0 10px;
+    }
 }
 
 .c-line__plan {
@@ -27,12 +27,12 @@ line
     height: 1px;
     width: 60px;
     transform: translateX(7px);
-    @include sp{
+    @include sp {
         align-items: center;
         margin: 27px auto;
         height: 1px;
         width: 38px;
-        -webkit-transform: translateX(7px);
+        transform: translateX(7px);
         transform: translateX(7px);
     }
 }
@@ -72,7 +72,7 @@ line
     margin-top: 27px;
     left: 48.5%;
     transform: translateY(-48.5%);
-    @include sp{
+    @include sp {
         margin-top: 14px;
         width: 27px;
         margin-left: -8px;

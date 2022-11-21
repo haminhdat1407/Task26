@@ -61,6 +61,12 @@ img
     right: 0;
     transform: translate(135px, -114px);
     display: block;
+    @include sp {
+        width: 102px;
+        right: 66px;
+        top: 16px;
+        display: block;
+    }
 }
 
 .c-footer__banner {

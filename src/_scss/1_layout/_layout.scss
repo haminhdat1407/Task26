@@ -63,9 +63,9 @@ body {
         margin-left: 0%;
         margin-bottom: 49px;
     }
-    @include sp{
+    @include sp {
         padding: 12px 8.5%;
-        margin: 37px 0 0 0;
+        margin: 37px 0 0;
     }
 }
 
@@ -78,10 +78,10 @@ body {
     height: 104%;
     background-color: #ededed;
     z-index: -1;
-    @include sp{
+    @include sp {
         top: -18%;
-    width: 52%;
-    height: 58.4%;
+        width: 52%;
+        height: 58.4%;
     }
 }
 
