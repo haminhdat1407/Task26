@@ -11,9 +11,9 @@ img
         margin-top: 30px;
         margin-left: 14px;
         display: block;
-       
+
     }
-  
+
 
     .c-house__imgtwo {
         margin-left: 27px;
@@ -23,6 +23,10 @@ img
     .c-house__numberthree {
         margin-top: -33px;
         margin-left: 25px;
+        @include sp {
+            margin-top: 6px;
+            margin-left: 9px;
+        }
     }
 
     .c-house__imgthree {
@@ -36,6 +40,7 @@ img
             display: block;
             width: 100%;
         }
+
         @include sp {
             width: 91.7%;
             margin-top: 15px;
@@ -45,9 +50,10 @@ img
 
 .c-footerpoint__img {
     display: block;
-    margin: 119px  auto;
+    margin: 119px auto;
     max-width: 1192px;
     width: 100%;
+
     @include sp {
         margin: 61px auto 45px;
         width: 84.9%;
@@ -61,16 +67,24 @@ img
     right: 0;
     transform: translate(135px, -114px);
     display: block;
+
     @include sp {
+     
         width: 102px;
-        right: 66px;
-        top: 16px;
+        right: 68px;
+        top: 37px;
         display: block;
+     
     }
 }
 
 .c-footer__banner {
     margin: 85px 0 92px;
+    @include sp {
+        display: block;
+        width: 85%;
+        margin: 0 auto;
+    }
 }
 
 .c-prevent__list {
@@ -79,10 +93,11 @@ img
         margin: 28px auto 20px;
         display: block;
         transform: translateX(-9px);
+
         @include sp {
             width: 64px;
             margin: 18px auto 0;
-            transform: translateX(8px);
+            transform: translateX(10px);
         }
     }
 
@@ -91,6 +106,7 @@ img
         margin: 22px auto;
         display: block;
         transform: translateX(-2px);
+
         @include sp {
             width: 59px;
             transform: translateX(3px);
@@ -103,6 +119,12 @@ img
         margin: 19px auto;
         display: block;
         transform: translateX(2px);
+
+        @include sp {
+            width: 78px;
+            transform: translateX(11px);
+            margin-top: 19px;
+        }
     }
 
     .c-prevent__img4 {
@@ -110,6 +132,12 @@ img
         margin: 56px auto 0;
         display: block;
         transform: translateX(10px);
+
+        @include sp {
+            width: 93px;
+            transform: translateX(5px);
+            margin-top: 43px;
+        }
     }
 
     .c-prevent__img5 {
@@ -117,6 +145,12 @@ img
         margin: 23px auto;
         display: block;
         transform: translateX(15px);
+
+        @include sp {
+            width: 56px;
+            transform: translateX(18px);
+            margin-top: 17px;
+        }
     }
 
     .c-prevent__img6 {
@@ -124,6 +158,7 @@ img
         margin: 20px auto;
         display: block;
         transform: translateX(-6px);
+
         @include sp {
             width: 60px;
             transform: translateX(8px);
@@ -136,6 +171,7 @@ img
         margin: 26px auto;
         display: block;
         transform: translateX(0);
+
         @include sp {
             width: 53px;
             transform: translateX(3px);
@@ -148,6 +184,12 @@ img
         margin: 26px auto;
         display: block;
         transform: translateX(5px);
+
+        @include sp {
+            width: 69px;
+            transform: translateX(11px);
+            margin-top: 12px;
+        }
     }
 
     .c-prevent__img9 {
@@ -155,6 +197,12 @@ img
         margin: 25px auto;
         display: block;
         transform: translate(12px, -1px);
+
+        @include sp {
+            width: 76px;
+            transform: translateX(5px);
+            margin-top: 12px;
+        }
     }
 
     .c-prevent__img10 {
@@ -162,6 +210,11 @@ img
         margin: 25px auto;
         display: block;
         transform: translateX(14px);
+        @include sp {
+            width: 72px;
+            transform: translateX(-5px);
+            margin-top: 28px;
+        }
     }
 
 }

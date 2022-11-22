@@ -23,6 +23,7 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 80px 40px 0;
+
     @include sp {
         max-width: 375px;
         padding: 51px 0 0;
@@ -47,6 +48,7 @@ body {
     max-width: 1740px;
     width: 100%;
     margin: 0 auto;
+
     @include sp {
         max-width: 375px;
     }
@@ -59,13 +61,15 @@ body {
     padding-right: 3.75%;
     margin: 79px 0 0 19%;
     z-index: 1;
+
     @include tb {
         margin-left: 0%;
         margin-bottom: 49px;
     }
+
     @include sp {
-        padding: 12px 8.5%;
-        margin: 37px 0 0;
+        margin: 42px 0 0;
+        padding: 11px 11px 0;
     }
 }
 
@@ -78,10 +82,11 @@ body {
     height: 104%;
     background-color: #ededed;
     z-index: -1;
+
     @include sp {
         top: -18%;
         width: 52%;
-        height: 58.4%;
+        height: 56.3%;
     }
 }
 
@@ -90,4 +95,9 @@ body {
     width: 100%;
     margin: 13.9% auto 0;
     padding: 0 0 0 7px;
+
+    @include sp {
+        margin-top: 31px;
+        padding: 0 48px;
+    }
 }

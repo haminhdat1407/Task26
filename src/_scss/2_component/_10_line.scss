@@ -18,6 +18,7 @@ line
     @include sp {
         width: 28px;
         margin: 16px 0 10px;
+        transform: translateY(-2px);
     }
 }
 
@@ -29,26 +30,13 @@ line
     transform: translateX(7px);
     @include sp {
         align-items: center;
-        margin: 27px auto;
+        margin: 16px auto;
         height: 1px;
         width: 38px;
-        transform: translateX(7px);
-        transform: translateX(7px);
+        transform: unset;
     }
 }
 
-// .c-titlesection::after {
-//     display: block;
-//     content: "";
-//     position: absolute;
-//     height: 1px;
-//     background-color: #cbcbcb;
-//     width: 73px;
-//     margin-top: 17px;
-//     margin-left: -3px;
-//     transform: translateX(-50%);
-//     left: 47%;
-// }
 .c-access__title::after {
     display: block;
     content: "";
@@ -60,6 +48,12 @@ line
     margin-left: -3px;
     transform: translateX(-50%);
     left: 47%;
+    @include sp {
+        width: 36px;
+        margin-top: 7px;
+        margin-left: -4px;
+        left: 53%;
+    }
 }
 
 .c-finace__texttitle::after {

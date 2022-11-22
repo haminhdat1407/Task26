@@ -9,6 +9,11 @@ other
     .u-textbanner {
         transform: translateX(-13px);
         display: inline-block;
+
+        @include sp {
+            letter-spacing: -0.3px;
+            transform: translateX(-6px);
+        }
     }
 }
 
@@ -25,13 +30,28 @@ other
 .c-textcenter {
     text-align: center;
     display: block;
-    margin: 0 auto  30px;
+    margin: 0 auto 30px;
 }
 
 .c-case__titletwo {
     display: inline-block;
     letter-spacing: -1.9px;
     transform: translateX(3px);
+}
+
+.c-case {
+    .u-textone {
+        @include sp {
+            margin-left: -11px;
+        }
+    }
+}
+
+.c-plan {
+    .u-texone {
+        margin-left: -5px;
+        letter-spacing: 0;
+    }
 }
 
 .c-table__left {
@@ -45,8 +65,9 @@ other
 .c-prevent__header {
     .u-texttwo {
         display: inline-block;
-        transform: translateX(5px);
-        letter-spacing: 3.3px;
+        transform: translateX(3px);
+        letter-spacing: 2px;
+        margin-left: 1px;
 
     }
 
@@ -60,8 +81,9 @@ other
     .u-inf1 {
         margin-left: -10px;
         letter-spacing: -1px;
+
         @include sp {
-            transform: translate(8px, 11.5px);
+            transform: translate(14px, 11.5px);
             line-height: 1.7;
             letter-spacing: -0.7px;
         }
@@ -69,8 +91,9 @@ other
 
     .u-inf2 {
         margin-top: 27px;
+
         @include sp {
-            transform: translate(3px, -6px);
+            transform: translate(3px, -11px);
             line-height: 1.6;
             letter-spacing: -0.8px;
         }
@@ -78,6 +101,11 @@ other
 
     .u-inf3 {
         transform: translate(5px, -9px);
+
+        @include sp {
+            transform: translate(11px, -12px);
+            letter-spacing: -0.4px;
+        }
     }
 
     .u-inf4 {
@@ -85,27 +113,41 @@ other
         margin-top: 30px;
         transform: translateX(13px);
         letter-spacing: -1.5px;
+        @include sp {
+            transform: translateX(6px);
+            margin-top: 18px;
+            letter-spacing: -1px;
+            margin-bottom: 19px !important;
+        }
     }
 
     .u-inf5 {
-        transform: translate(21px, -6px);
-        margin-left: -5px;
         text-align: center;
-        letter-spacing: -1px;
+        transform: translate(18px, -11px);
+        margin-left: -2px;
+        letter-spacing: 0;
+        @include sp{
+            margin-left: 12px;
+    letter-spacing: -0.6px;
+    transform: translate(15px, -12px);
+        }
     }
 
     .u-inf6 {
         transform: translate(-6px, 3px);
+
         @include sp {
             transform: translate(7px, 4px);
             letter-spacing: -0.8px;
+            margin-bottom: 36px !important;
         }
     }
 
     .u-inf7 {
         transform: translate(-1px, 1px);
         letter-spacing: -1px;
-        @include sp{
+
+        @include sp {
             transform: translate(4px, 1px);
             letter-spacing: -0.8px;
             line-height: 1.6;
@@ -115,17 +157,35 @@ other
     .u-inf8 {
         transform: translate(1px, -8px);
         letter-spacing: -2px;
+        @include sp {
+            transform: translate(9px, -15px);
+            letter-spacing: -1px;
+            margin-bottom: 19px !important;
+            line-height: 1.6;
+        }
     }
 
     .u-inf9 {
         margin-left: 21px;
-        margin-top: -5px;
+        margin-top: -9px;
         letter-spacing: -1px;
+        @include sp {
+            margin-left: 7px;
+            margin-top: -14px;
+            letter-spacing: -1px;
+            line-height: 1.5;
+        }
     }
 
     .u-inf10 {
         letter-spacing: -1px;
         margin-left: 28px;
-        margin-top: -14px;
+        margin-top: -16px;
+        @include sp {
+            letter-spacing: -0.8px;
+            margin-left: -11px;
+            margin-top: -19px;
+
+        }
     }
 }
