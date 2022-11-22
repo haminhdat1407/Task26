@@ -20,7 +20,7 @@
 //     }
 // }
 @mixin tb1 {
-    @media only screen and (max-width: 1374px) {
+    @media only screen and (max-width: 1385px) {
         @content;
     }
 }
