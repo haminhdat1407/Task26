@@ -137,6 +137,8 @@ Css of home page
         }
 
         .c-note {
+            font-family: $sub-font1;
+            font-weight: 400;
             background-color: #7a89a8;
             border-radius: 20px;
             width: 210px;
@@ -145,7 +147,6 @@ Css of home page
             z-index: 1;
             text-align: center;
             color: #fff;
-
             position: absolute;
             right: -7px;
             top: -13px;
@@ -242,7 +243,7 @@ Css of home page
         top: 55%;
         right: 22.3%;
         letter-spacing: 3.9px;
-        font-weight: bold;
+        font-weight: 700;
         position: absolute;
         color: #c7c7c7;
         font-family: $sub-font3;
@@ -271,7 +272,7 @@ Css of home page
     .c-case__des {
         background-color: #000;
         width: 100%;
-        border-radius: 8px;
+        border-radius: 10px;
         height: 126px;
         padding: 45px 30px;
         position: absolute;
@@ -279,7 +280,6 @@ Css of home page
         left: -1px;
 
         @include sp {
-            transform: translateX(-3px);
             transform: translateX(-8px);
             top: 81.4%;
             width: 100%;
@@ -1181,6 +1181,7 @@ Css of home page
             display: block;
             transform: translate(-2px, 17px);
             letter-spacing: -0.8px;
+            font-weight: 400;
 
             @include sp {
                 font-size: 1.1rem;
@@ -1227,6 +1228,7 @@ Css of home page
             color: #252a6d;
             font-size: 4.6rem;
             letter-spacing: 10.3px;
+            font-family: $sub-font1;
 
             @include sp {
                 font-size: 2.3rem;
@@ -1680,6 +1682,7 @@ Css of home page
         font-weight: 300;
         margin-top: 83px;
         transform: translateX(-1px);
+        color: #000;
 
         @include sp {
             margin: 41px auto 37px;
@@ -1701,6 +1704,7 @@ Css of home page
         text-align: center;
         margin-top: 46px;
         margin-left: -65px;
+        color: #000;
 
         @include sp {
             font-size: 1.4rem;
@@ -1749,6 +1753,7 @@ Css of home page
         font-size: 1.5rem;
         transform: translateY(3px);
         margin-left: 149px;
+        font-weight: 400;
 
         @include sp {
             font-size: 0.8rem;

@@ -83,6 +83,7 @@ text
         color: #252a6d;
         transform: translateX(-10px);
         display: inline-block;
+        font-family: $sub-font1;
         @include sp {
             font-size: 1.7rem;
             transform: translateX(-4px);
