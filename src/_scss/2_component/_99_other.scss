@@ -19,11 +19,9 @@ other
 
 .c-house {
     .c-house__titleone {
-        // margin-left: 86px;
     }
 
     .c-house__desone {
-        // margin-left: 87px;
     }
 }
 
@@ -126,10 +124,10 @@ other
         transform: translate(18px, -11px);
         margin-left: -2px;
         letter-spacing: 0;
-        @include sp{
+        @include sp {
             margin-left: 12px;
-    letter-spacing: -0.6px;
-    transform: translate(15px, -12px);
+            letter-spacing: -0.6px;
+            transform: translate(15px, -12px);
         }
     }
 
