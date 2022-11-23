@@ -28,6 +28,35 @@ table
 
     }
 
+    li:nth-child(3) {
+        padding: 31px 0 0;
+        @include sp {
+            padding: 16px 0 7px;
+        }
+
+        .c-table__textthree {
+            margin-top: 2px;
+            @include sp {
+                margin-top: 6px;
+            } 
+        }
+
+        .c-table__right {
+            a {
+                margin-bottom: 9px;
+                @include  sp {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    li:nth-child(4) {
+        @include sp {
+            padding: 14px 0 5px;
+        }
+    }
+
 
 
 
@@ -129,9 +158,9 @@ table
             transform: translateX(-2px);
             padding: 2px 17px 5px;
             @include sp {
-                padding: 2px 10px 0 7px;
+                padding: 0 10px 0 7px;
                 transform: translateX(6px);
-                height: 13px;
+                height: 14px;
                 letter-spacing: -1px;
             }
         }
@@ -143,9 +172,9 @@ table
             margin-right: 17px;
             @include sp {
                 letter-spacing: -1.1px;
-                padding: 2px 9px 2px 6px;
+                padding: 0 9px 4px 6px;
                 margin-left: 20px;
-                height: 12px;
+                height: 10px;
                 margin-right: -9px;
             }
         }
@@ -159,7 +188,7 @@ table
                 transform: translateX(0);
                 letter-spacing: 0;
                 margin-right: 0;
-                padding: 2px 4px 0;
+                padding: 0 4px;
             }
         }
     }

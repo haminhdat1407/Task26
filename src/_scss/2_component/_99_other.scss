@@ -35,6 +35,9 @@ other
     display: inline-block;
     letter-spacing: -1.9px;
     transform: translateX(3px);
+    @include sp{
+        transform: translateX(-2px);
+    }
 }
 
 .c-case {
