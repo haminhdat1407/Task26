@@ -58,7 +58,7 @@ Css of home page
             font-weight: 700;
             transform: translate(-3px, 8px);
             letter-spacing: -1.5px;
-
+            font-family: $sub-font1;
             @include sp {
                 font-size: 0.9rem;
                 margin-top: -7px;
@@ -175,6 +175,7 @@ Css of home page
             border-radius: 20px;
             text-align: center;
             color: #fff;
+            font-family: $sub-font1;
 
             line-height: 2;
             letter-spacing: -0.5px;
@@ -749,10 +750,11 @@ Css of home page
 
 //DESIGN
 .c-design {
-    margin-bottom: 119px;
+    margin-bottom: 118px;
+  
     @include sp {
-        margin-bottom: 49px;
-
+        max-width: 375px;
+        margin: 0 auto 49px;
     }
 
     .c-design__item {
@@ -791,7 +793,6 @@ Css of home page
 
         @include sp {
             font-size: 1rem;
-            line-height: 1.75;
             margin-top: 16px;
         }
     }
@@ -799,18 +800,19 @@ Css of home page
     
 
     .c-design__left {
-        width: 50%;
+        width: 56%;
+        padding: 1.2% 0 0 17.8%;
 
         @include tb {
             width: 83%;
             margin: 0 auto;
             margin-left: 0%;
-            margin-bottom: 49px;
+            margin-bottom: 47px;
         }
 
         @include sp {
             width: 100%;
-            margin-left: 21px;
+            padding-left: 6%;
         }
     }
 
@@ -826,10 +828,8 @@ Css of home page
 }
 
 .c-design__right {
-    width: 50%;
-    padding-left: 28px;
-    margin-top: 116px;
-    max-width: 750px;
+    width: 690px;
+    margin: 140px 62px 0 0;
 
     @include tb {
        
@@ -849,6 +849,7 @@ Css of home page
     iframe {
         width: 100%;
         max-width: 700px;
+        width: 701px;
         height: 390px;
 
         @include sp {
@@ -946,7 +947,7 @@ Css of home page
     .c-plan__item:first-child {
         margin-right: 60px;
 
-        @include sp {
+        @include tb {
             margin-right: 0;
         }
     }
@@ -1179,14 +1180,13 @@ Css of home page
 
         .c-itemtwo__text {
             display: block;
-            transform: translate(-2px, 17px);
+            transform: translate(-2px, 15px);
             letter-spacing: -0.8px;
             font-weight: 400;
 
             @include sp {
                 font-size: 1.1rem;
                 letter-spacing: -0.2px;
-                transform: translateY(8px);
                 transform: translateY(8px);
                 margin-left: -2px;
             }
@@ -1250,11 +1250,10 @@ Css of home page
 
         @include sp {
             font-size: 1.4rem;
-            margin-top: 22px;
+            margin-top: 13px;
             transform: translateX(0);
             letter-spacing: -0.5px;
             margin-left: 0;
-            line-height: 0;
         }
 
         .c-textone {
@@ -1278,7 +1277,7 @@ Css of home page
 
             @include sp {
                 letter-spacing: -0.5px;
-                margin: 18px 0 45px 6px;
+                margin: -3px 0 0 6px;
             }
         }
 
@@ -1300,7 +1299,7 @@ Css of home page
         margin: 70px 0 0 30px;
 
         @include sp {
-            margin: 46px auto 0;
+            margin: 34px auto 0;
         }
     }
 
@@ -1343,7 +1342,7 @@ Css of home page
         height: 17px;
         position: absolute;
         top: 51%;
-        right: -35px;
+        right: -13%;
         transform: translateY(-51%);
 
         @include sp {
@@ -1452,6 +1451,10 @@ Css of home page
         background-color: #231815;
         padding: 63px 0 150px;
         transform: translateX(2px);
+        @include tb{
+            margin-bottom: 10px;
+            height: 240px;
+        }
 
         @include sp {
             padding: 27px 50px;
@@ -1478,6 +1481,7 @@ Css of home page
         font-weight: 700;
         padding: 9px 28px;
         margin-left: -16px;
+        transform: translate(2px, -2px);
 
         @include tb {
             margin: 0 auto;
@@ -1485,10 +1489,11 @@ Css of home page
 
         @include sp {
             font-size: 1.2rem;
-            width: 120px;
-            height: 25px;
+            width: 95px;
+            height: 18px;
             letter-spacing: 0;
             padding: 4px 12px;
+            transform: translate(1px, 0);
         }
 
     }
@@ -1499,6 +1504,12 @@ Css of home page
         color: #fff;
         transform: translate(-11px, 0);
         margin-top: 5px;
+        @include tb{
+    // /* -webkit-transform: translate(-11px, 0); */
+    /* transform: translate(-11px, 0); */
+    transform: unset;
+    margin: 0 auto;
+        }
 
         @include sp {
             font-size: 1.6rem;
@@ -1517,12 +1528,16 @@ Css of home page
         margin-left: 12px;
         letter-spacing: 0.9px;
         text-align: center;
+        @include tb{
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
 
         @include sp {
             font-size: 1rem;
             letter-spacing: 0.2px;
             margin: 16px 21px 0;
-            transform: translate(0, -4px);
+            transform: translate(0, -6px);
             line-height: 1.6;
         }
 
@@ -1683,9 +1698,11 @@ Css of home page
         margin-top: 83px;
         transform: translateX(-1px);
         color: #000;
+@include tb{
+    margin: 41px auto 37px;
 
+}
         @include sp {
-            margin: 41px auto 37px;
             width: 300px;
         }
 
@@ -1751,16 +1768,18 @@ Css of home page
 
     .c-access__desright {
         font-size: 1.5rem;
-        transform: translateY(3px);
         margin-left: 149px;
         font-weight: 400;
+        transform: translate(-1px, 0);
+        letter-spacing: 0.2px;
 
         @include sp {
             font-size: 0.8rem;
             margin-left: 69px;
+            transform: translateX(11px);
+            letter-spacing: 0;
         }
 
-        transform: translate(10px, -1px);
 
     }
 
@@ -1816,10 +1835,12 @@ Css of home page
 
 // FOOTERs
 .c-footer {
-    max-width: 1196px;
+    max-width: 1237px;
     margin: 0 auto;
     transform: translateX(2px);
     margin-top: 3px;
+    padding: 0 20px;
+   
 
     @include sp {
         max-width: 375px;
@@ -1850,6 +1871,7 @@ Css of home page
             transform: translate(-5px, 0);
             text-transform: uppercase;
             font-family: $sub-font2;
+            color: #000;
 
             @include sp {
                 font-size: 2.4rem;

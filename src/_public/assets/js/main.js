@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  
   $('.c-design__imglist').slick({
     slidesToShow: 1,
     slidesToScroll: 1,

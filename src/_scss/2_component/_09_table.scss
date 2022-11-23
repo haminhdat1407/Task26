@@ -105,10 +105,11 @@ table
             transform: translate(5px, -1px);
             padding: 2px 11px 5px;
 
-            @include sp {
+            @include tb {
                 padding: 1px 2px 0 7px;
                 margin-top: 3px;
                 transform: translate(5px, -1px);
+              
             }
         }
 
@@ -162,7 +163,7 @@ table
             }
         }
     }
-
+  
     .c-table__actiotwo {
         @include sp {
             margin-top: -2px;

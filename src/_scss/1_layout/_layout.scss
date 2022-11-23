@@ -8,8 +8,9 @@ body {
 
 body {
     font-family: $main-fonts;
+    max-width: 1920px;
     font-size: 1.4rem;
-    max-width: $base-width;
+    margin: 0 auto;
     min-width: 375px;
     line-height: 1.5;
     color: #231815;
@@ -58,9 +59,11 @@ body {
     position: relative;
     flex-wrap: wrap;
     display: flex;
-    padding-right: 3.75%;
-    margin: 79px 0 0 19%;
     z-index: 1;
+    padding: 3% 1.75% 0;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
 
     @include tb {
         margin-left: 0%;
@@ -69,24 +72,26 @@ body {
 
     @include sp {
         margin: 42px 0 0;
-        padding: 11px 11px 0;
+        padding: 7px 11px 0;
+        max-width: 375px;
     }
 }
 
 .c-wrapperdesign::before {
     content: "";
     position: absolute;
-    top: -37%;
+    top: -18%;
     right: 0;
-    width: 77.3%;
-    height: 104%;
+    width: 62.8%;
+    height: 88.4%;
     background-color: #ededed;
     z-index: -1;
+
 
     @include sp {
         top: -18%;
         width: 52%;
-        height: 56.3%;
+        height: 60.3%;
     }
 }
 

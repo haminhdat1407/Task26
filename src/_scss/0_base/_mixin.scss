@@ -14,11 +14,7 @@
 //============================================
 // breakpoint
 //============================================
-// @mixin sp {
-//     @media only screen and (max-width: 767px) {
-//         @content;
-//     }
-// }
+
 @mixin tb1 {
     @media only screen and (max-width: 1385px) {
         @content;

@@ -30,9 +30,9 @@ line
     transform: translateX(7px);
     @include sp {
         align-items: center;
-        margin: 16px auto;
+        margin: 10px auto 30px;
         height: 1px;
-        width: 38px;
+        width: 29px;
         transform: unset;
     }
 }
