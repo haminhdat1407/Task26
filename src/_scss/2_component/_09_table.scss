@@ -20,7 +20,7 @@ table
     li {
         padding: 31px 0 9px;
         display: flex;
-        border-bottom: 1px solid;
+        border-bottom: 1px solid #cbcbcb;
 
         @include sp {
             padding: 16px 0 4px;
@@ -103,7 +103,7 @@ table
             font-size: 2rem;
             margin-right: 20px;
             padding: 2px 12px 5px;
-            border-radius: 5px;
+            border-radius: 4px;
             letter-spacing: 0.8px;
             transform: translate(2px, -1px);
 

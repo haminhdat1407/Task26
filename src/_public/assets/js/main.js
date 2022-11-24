@@ -6,6 +6,8 @@ $(document).ready(function(){
     infinite: true,
     arrows: true,
     draggable: false,
+    autoplay: true,
+        autoplaySpeed: 2000,
     prevArrow: `<a href="#">
     <img class="c-buttonleft" src="assets/icon/button-left.svg" alt="Design">
   </a>`,
@@ -16,6 +18,7 @@ $(document).ready(function(){
       slidesToShow: 1,
       arrows: false,
       infinite: false,
+      
     },
   });
 });

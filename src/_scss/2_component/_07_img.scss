@@ -53,6 +53,7 @@ img
     margin: 119px auto;
     max-width: 1192px;
     width: 100%;
+    cursor: pointer;
 
     @include sp {
         margin: 61px auto 45px;
@@ -118,7 +119,7 @@ img
         width: 129px;
         margin: 19px auto;
         display: block;
-        transform: translateX(2px);
+        transform: translateX(-5px);
 
         @include sp {
             width: 78px;
@@ -131,7 +132,7 @@ img
         width: 153px;
         margin: 56px auto 0;
         display: block;
-        transform: translateX(10px);
+        transform: translateX(-3px);
 
         @include sp {
             width: 93px;
@@ -144,7 +145,7 @@ img
         width: 94px;
         margin: 23px auto;
         display: block;
-        transform: translateX(15px);
+        transform: translateX(6px);
 
         @include sp {
             width: 56px;
@@ -183,7 +184,7 @@ img
         width: 114px;
         margin: 26px auto;
         display: block;
-        transform: translateX(5px);
+        transform: translateX(-4px);
 
         @include sp {
             width: 69px;
@@ -196,7 +197,7 @@ img
         width: 124px;
         margin: 25px auto;
         display: block;
-        transform: translate(12px, -1px);
+        transform: translate(-4px, -1px);
 
         @include sp {
             width: 76px;
@@ -209,7 +210,7 @@ img
         width: 117px;
         margin: 25px auto;
         display: block;
-        transform: translateX(14px);
+        transform: translateX(11px);
         @include sp {
             width: 72px;
             transform: translateX(-5px);

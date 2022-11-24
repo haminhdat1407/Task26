@@ -59,6 +59,7 @@ Css of home page
             transform: translate(-3px, 8px);
             letter-spacing: -1.5px;
             font-family: $sub-font1;
+
             @include sp {
                 font-size: 0.9rem;
                 margin-top: -7px;
@@ -95,7 +96,7 @@ Css of home page
         justify-content: space-between;
         width: 100%;
 
-   
+
         @include tb {
             margin-top: 50px;
         }
@@ -212,7 +213,7 @@ Css of home page
         @include sp {
             font-size: 1.5rem;
             margin-left: -1px;
-         
+
             transform: translateY(-1px);
             letter-spacing: 0;
         }
@@ -443,6 +444,7 @@ Css of home page
         margin-top: -30px;
         margin-left: 55px;
         position: relative;
+
         @include sp {
             margin-top: 4px;
             margin-left: 48px;
@@ -516,6 +518,7 @@ Css of home page
     .c-houseitem__destwo {
         margin-left: 22px;
         transform: translateX(34px);
+
         @include sp {
             margin: 11px 5px 0 50px;
             transform: translateY(1px);
@@ -562,6 +565,9 @@ Css of home page
     margin-top: 164px;
     padding: 60px 46px 0;
     position: relative;
+    @include tb {
+        padding-bottom: 173px;
+    }
 
     @include sp {
         margin-top: 72px;
@@ -573,7 +579,10 @@ Css of home page
 
         @include tb {
             display: block;
-            margin: -50px 0 0 auto;
+            position: absolute;
+            bottom: -103px;
+            right: 59px;
+            display: block;
         }
 
         @include sp {
@@ -650,7 +659,7 @@ Css of home page
     .c-point__list {
         display: flex;
         justify-content: space-between;
-        padding: 0 30px 77px;
+        padding: 0 30px 80px;
         flex-wrap: wrap;
         margin-top: -122px;
 
@@ -663,9 +672,9 @@ Css of home page
 
     .c-point__item {
         color: #231815;
-        width: calc(25% - 20px);
+        width: calc(25% - 17px);
         background: rgb(255, 255, 255);
-        padding: 22px 19px 43px;
+        padding: 22px 20px 43px;
 
         @include tb {
             width: 48.4%;
@@ -683,9 +692,7 @@ Css of home page
 
     .c-point__item:nth-child(1) {
         @include sp {
-            padding: 10px
-            
-                11px 16px 10px;
+            padding: 10px 9px 16px 12px;
 
         }
     }
@@ -734,20 +741,21 @@ Css of home page
             font-size: 1.1rem;
             margin-bottom: 4px;
             margin-top: 23px;
-        
+
         }
     }
 
     .c-pointitem__des {
         font-size: 1.9rem;
         font-weight: 300;
-        margin-top: 16px;
         font-weight: 300;
         font-size: 1.9rem;
         color: #231815;
         letter-spacing: 0;
         line-height: 1.4;
         padding: 0 10px 0 2px;
+        margin-top: 12px;
+
         @include sp {
             font-size: 1rem;
             letter-spacing: -0.5px;
@@ -771,7 +779,7 @@ Css of home page
 //DESIGN
 .c-design {
     margin-bottom: 118px;
-  
+
     @include sp {
         max-width: 375px;
         margin: 0 auto 49px;
@@ -784,7 +792,7 @@ Css of home page
         left: 0;
         position: relative;
 
-        @include sp {
+        @include tb {
             width: 96%;
         }
     }
@@ -817,7 +825,7 @@ Css of home page
         }
     }
 
-    
+
 
     .c-design__left {
         width: 56%;
@@ -841,6 +849,7 @@ Css of home page
 .c-design__header {
     letter-spacing: 4.6px;
     margin-top: 1px;
+
     @include sp {
         font-size: 2.4rem;
         letter-spacing: 2.2px;
@@ -852,7 +861,7 @@ Css of home page
     margin: 140px 62px 0 0;
 
     @include tb {
-       
+
         width: 100%;
         height: 167px;
         margin: 0 auto;
@@ -882,11 +891,11 @@ Css of home page
 }
 
 .c-design__imglist {
-     
+
     @include sp {
         height: 200px;
     }
-    
+
 
 
 }
@@ -919,6 +928,7 @@ Css of home page
         width: 100%;
         justify-content: space-between;
         flex-wrap: wrap;
+
         @include sp {
             margin: 25px 11px 0;
         }
@@ -929,7 +939,7 @@ Css of home page
 
         @include sp {
             position: relative;
-            padding-bottom: 27px;
+            // padding-bottom: 27px;
             width: 48.1%;
         }
 
@@ -947,7 +957,7 @@ Css of home page
 
     .c-itemtwo {
         transform: translateX(-22px);
-        margin-top: 18px;
+        margin-top: 14px;
 
         @include sp {
             transform: unset;
@@ -975,11 +985,12 @@ Css of home page
     .c-plan__listtext {
         display: flex;
         margin: 0 auto;
-        justify-content: center;
+        justify-content: space-between;
+        max-width: 1031px;
 
         margin-top: 22px;
         font-weight: 300;
-        margin-left: -10px;
+        margin-left: 164px;
 
         @include sp {
             display: unset;
@@ -1005,6 +1016,7 @@ Css of home page
         text-align: center;
         letter-spacing: 4.7px;
         transform: translate(13px, 6px);
+
         @include sp {
             letter-spacing: 2.4px;
             transform: translate(0, 1px);
@@ -1016,13 +1028,14 @@ Css of home page
         font-size: 3rem;
         color: #fff;
         background-color: #231815;
-        padding: 5px 28px 15px;
         max-width: 408px;
         margin: 78px auto 16px;
-        letter-spacing: 1.4px;
+        padding: 12px 23px 23px 24px;
+        letter-spacing: 0.1rem;
         text-align: center;
         display: block;
-        transform: translate(17px, 10px);
+        line-height: 1;
+        transform: translate(17px, 12px);
 
         @include sp {
             max-width: 204px;
@@ -1062,9 +1075,8 @@ Css of home page
         font-size: 2.2rem;
         position: relative;
         margin: 31px auto;
-        @include tb1{
 
-        }
+        @include tb1 {}
 
         @include sp {
             margin: 0 auto 28px;
@@ -1080,7 +1092,7 @@ Css of home page
             transform: translate(-30%, -49%);
             width: 70%;
             font-weight: 400;
-            
+
             @include sp {
                 top: 52.1%;
             }
@@ -1091,7 +1103,7 @@ Css of home page
     .c-finace__itemone {
         @include tb1 {
             // margin: 0 auto 50px;
-            
+
         }
 
         p {
@@ -1155,6 +1167,7 @@ Css of home page
         left: 50%;
         transform: translate(-50%, -50%);
         width: 70%;
+
         @include sp {
             top: 52%;
         }
@@ -1287,6 +1300,7 @@ Css of home page
 
         p:nth-child(1) {
             transform: translate(-1px, 5px);
+
             @include sp {
                 transform: translate(-13px, 0);
             }
@@ -1325,7 +1339,7 @@ Css of home page
 
     .c-booking__item {
         background-color: #565f64;
-      
+
         position: relative;
         padding: 50px 1%;
         background-color: #565f64;
@@ -1378,6 +1392,7 @@ Css of home page
                 transform: translate(1px, -3px);
             }
         }
+
         @include sp {
             transform: translateX(-21px);
         }
@@ -1433,7 +1448,7 @@ Css of home page
     }
 
     .c-booking__title::after {
-      
+
         @include sp {
             position: absolute;
             display: block;
@@ -1453,7 +1468,7 @@ Css of home page
     transform: translateX(2px);
     max-width: 1196px;
     width: 100%;
-    margin: 124px auto 106px;
+    margin: 124px auto 110px;
     display: block;
 
     @include sp {
@@ -1471,6 +1486,7 @@ Css of home page
         background-color: #231815;
         padding: 63px 0 150px;
         transform: translateX(2px);
+
         @include tb {
             margin-bottom: 10px;
             height: 240px;
@@ -1524,8 +1540,9 @@ Css of home page
         color: #fff;
         transform: translate(-11px, 0);
         margin-top: 5px;
+
         @include tb {
-      
+
             transform: unset;
             margin: 0 auto;
         }
@@ -1548,9 +1565,12 @@ Css of home page
         margin-left: 12px;
         letter-spacing: 0.9px;
         text-align: center;
+
         @include tb {
             margin-bottom: 10px;
             margin-top: 0;
+
+            margin: 0 10px;
         }
 
         @include sp {
@@ -1577,24 +1597,24 @@ Css of home page
     .c-prevent__list {
         display: flex;
         flex-wrap: wrap;
-        border-left: 1px solid #ededed;
-        border-right: 1px solid #ededed;
-        border-bottom: 1px solid #ededed;
-        padding: 37px 38px 51px;
+        border-left: 1px solid #231815;
+        border-right: 1px solid #231815;
+        border-bottom: 1px solid #231815;
+        padding: 37px 38px 49px;
 
         @include sp {
-            padding: 26px 20px 62px;
+            padding: 26px 20px 59px;
         }
     }
 
     .c-prevent__item {
-        border-right: 1px solid #ededed;
+        border-right: 1px solid #aeaeae;
         padding: 0 30px 20px;
-        width: 20%;
+        width: 20.4%;
 
         @include tb {
             width: 50%;
-            border-bottom: 1px solid #ededed;
+            border-bottom: 1px solid #aeaeae;
         }
 
         @include sp {
@@ -1603,23 +1623,30 @@ Css of home page
     }
 
     .c-prevent__item:nth-child(-n+5) {
-        border-bottom: 1px solid #ededed;
+        border-bottom: 1px solid #aeaeae;
 
     }
 
     .c-prevent__item:nth-child(5) {
         border-right: unset;
-
+        width: 18.3%;
+        padding: 0 15px;
         @include tb {
-            border-right: 1px solid #ededed;
+            border-right: 1px solid #aeaeae;
+        }
+        @include sp {
+            width: 50%;
         }
     }
 
     .c-prevent__item:nth-child(10) {
         border-right: unset;
-
+        width: 18.3%;
         @include tb {
             border-bottom: unset;
+        }
+        @include sp {
+            width: 50%;
         }
     }
 
@@ -1636,7 +1663,21 @@ Css of home page
         }
     }
 
-   
+    .c-prevent__item:nth-child(even) {
+        @include tb {
+            width: 42%;
+            margin-left: 4px;
+        }
+    }
+
+    .c-prevent__item:nth-child(odd) {
+        @include tb {
+            width: 55%;
+            margin-left: -5px;
+        }
+    }
+
+
 
 
     .c-prevent__img {
@@ -1671,6 +1712,7 @@ Css of home page
 
     .c-access__title {
         margin-left: -68px !important;
+
         @include sp {
             margin-left: 18px !important;
             margin-bottom: 0;
@@ -1684,6 +1726,7 @@ Css of home page
             width: 100%;
             height: 500px;
         }
+
         @include sp {
             width: 100%;
             height: 580px;
@@ -1718,10 +1761,12 @@ Css of home page
         margin-top: 83px;
         transform: translateX(-1px);
         color: #000;
+
         @include tb {
             margin: 41px auto 37px;
 
         }
+
         @include sp {
             width: 300px;
         }
@@ -1817,6 +1862,7 @@ Css of home page
         span {
             margin-left: 5px;
             letter-spacing: 3.1px;
+
             @include sp {
                 margin-left: 2px;
                 letter-spacing: 2.1px;
@@ -1860,7 +1906,7 @@ Css of home page
     transform: translateX(2px);
     margin-top: 3px;
     padding: 0 20px;
-   
+
 
     @include sp {
         max-width: 375px;
@@ -1882,7 +1928,7 @@ Css of home page
             height: 111px;
         }
 
-        h3 {
+        a {
             text-align: center;
             font-size: 4.8rem;
             font-weight: 300;
@@ -1892,7 +1938,9 @@ Css of home page
             text-transform: uppercase;
             font-family: $sub-font2;
             color: #000;
-
+            display: block;
+            display: inline-block;
+            width: 100%;
             @include sp {
                 font-size: 2.4rem;
                 letter-spacing: 2.3px;

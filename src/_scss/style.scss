@@ -7,7 +7,7 @@
 @import "0_base/reset";
 @import "0_base/mixin";
 
-.sp-only {
+.u-sponly {
     display: none;
 }
 
@@ -15,24 +15,24 @@
     display: none;
 }
 
-// .pc-only {
+// .u-pconly {
 //     display: none;
 // }
 // @include sp {
-//     .pc-only {
+//     .u-pconly {
 //         display: none;
 //     }
 
-//     .sp-only {
+//     .u-sponly {
 //         display: block;
 //     }
 // }
 @include sp {
-    .pc-only {
+    .u-pconly {
         display: none;
     }
 
-    .sp-only {
+    .u-sponly {
         display: block;
     }
 }

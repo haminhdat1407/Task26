@@ -58,23 +58,53 @@ text
 
 .c-plan__text:nth-child(1) {
     @include sp {
-        margin-top: -3px;
+        margin-top: 26px;
     }
 }
 
 .c-plan__text:nth-child(2) {
+    margin-right: 29px;
+    
     @include sp {
-        margin-left: -7px;
-        margin-top: 2px;
+        margin-left: 17px;
+        // margin-top: 2px;
     }
+
+    .c-plan__textnumber {
+        transform: translateX(16px);
+        display: inline-block;
+        @include sp {
+            transform: translateX(8px);
+        }
+    }
+
 }
 
 .c-plan__text:nth-child(3) {
+    transform: translateX(-10px);
     @include sp {
-        margin-left: -5px;
+        margin-left: 8px;
         margin-top: 2px;
     }
+
+    .c-plan__textnumber {
+        transform: translate(15px, 0);
+        display: inline-block;
+        @include sp {
+            transform: translateX(10px);
+        }
+    }
 }
+
+.c-plan__listtext {
+    .c-plan__textnumber {
+        @include sp {
+            transform: translateX(10px);
+            display: inline-block;
+        }
+    }
+}
+
 
 
 .c-point {
