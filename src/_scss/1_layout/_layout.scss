@@ -8,7 +8,7 @@ body {
 
 body {
     font-family: $main-fonts;
-    max-width: 1920px;
+    // max-width: 1920px;
     font-size: 1.4rem;
     margin: 0 auto;
     min-width: 375px;
@@ -20,14 +20,22 @@ body {
 //-------------------------------------------------------
 
 .c-case {
-    max-width: 1608px;
+    max-width: 1664px;
+
     width: 100%;
     margin: 0 auto;
-    padding: 80px 40px 0;
+    // padding: 80px 40px 0;
 
     @include sp {
-        max-width: 375px;
-        padding: 51px 0 0;
+        max-width: 360px;
+        // padding: 51px 0 0;
+    }
+}
+
+.l-container {
+    margin-top: 75px;
+    @include tb {
+        margin-top: 48px;
     }
 }
 
@@ -49,9 +57,11 @@ body {
     max-width: 1740px;
     width: 100%;
     margin: 0 auto;
+    background-color: $background-colormain;
 
     @include sp {
-        max-width: 375px;
+        max-width: 565px;
+        padding: 20px;
     }
 }
 
@@ -61,31 +71,26 @@ body {
     display: flex;
     z-index: 1;
     padding: 3% 1.75% 0;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin: 0 auto;
     width: 100%;
+    max-width: 1790px;
 
     @include tb {
         margin-left: 0%;
         margin-bottom: 49px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     @include sp {
         margin: 42px 0 0;
         padding: 7px 11px 0;
-        max-width: 375px;
     }
 }
 
 .c-wrapperdesign::before {
-    content: "";
-    position: absolute;
-    top: -18%;
-    right: 0;
-    width: 62.8%;
-    height: 88.4%;
-    background-color: #ededed;
-    z-index: -1;
+
 
 
     @include sp {
@@ -96,10 +101,10 @@ body {
 }
 
 .c-wrappeaccess {
-    max-width: 611px;
+    max-width: 634px;
     width: 100%;
     margin: 13.9% auto 0;
-    padding: 0 0 0 7px;
+    padding: 0 20px;
 
     @include sp {
         margin-top: 31px;

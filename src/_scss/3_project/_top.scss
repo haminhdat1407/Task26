@@ -92,36 +92,40 @@ Css of home page
 
     .c-listcase {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
         width: 100%;
+        padding: 40px 37px 0 73px;
 
 
         @include tb {
-            margin-top: 50px;
+            margin-top: -5px;
+            flex-wrap: wrap;
+            padding: 0;
+
         }
 
         @include sp {
-            margin-top: 2px;
+            margin-top: 18px;
         }
 
     }
 
     .c-itemcase {
-        position: relative;
         margin-bottom: 30px;
-        transform: translate(16px, -30px);
-        width: 31.1%;
+        width: 474px;
+        max-width: 38.1%;
         position: relative;
+        margin-right: 3.7%;
 
         @include tb {
-            width: 70%;
-            margin: 0 auto 60px;
+            max-width: 92.1%;
+            margin: 0 auto 107px;
         }
 
         @include sp {
-            width: 87.8%;
-            margin: 0 auto 29px;
+           
+
         }
 
         .c-des {
@@ -130,75 +134,106 @@ Css of home page
             text-align: center;
             font-weight: 700;
             letter-spacing: -1.6px;
+            position: absolute;
+            top: 50%;
+            // left: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: center;
+            display: block;
+            padding: 0 4%;
 
             @include sp {
                 font-size: 1.7rem;
-                margin-top: 1px;
-                transform: translateX(1px);
                 letter-spacing: -1px;
+                width: 100%;
+                text-align: center;
+                display: block;
+                padding: 0 7%;
+                position: absolute;
+                top: 49%;
             }
         }
+    }
 
-        .c-note {
-            font-family: $sub-font1;
-            font-weight: 400;
-            background-color: #7a89a8;
-            border-radius: 20px;
-            width: 210px;
-            height: 35px;
-            font-size: 1.8rem;
-            z-index: 1;
-            text-align: center;
-            color: #fff;
-            position: absolute;
-            right: -7px;
-            top: -13px;
-            line-height: 2;
-            letter-spacing: -1.5px;
+    .c-note {
+        font-family: $sub-font1;
+        font-weight: 400;
+        background-color: #7a89a8;
+        border-radius: 20px;
+        width: 211px;
+        max-width: 53%;
+        height: 35px;
+        font-size: 1.8rem;
+        z-index: 1;
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        right: -8px;
+        top: -13px;
+        line-height: 2;
+        letter-spacing: -1.5px;
+        padding: 0 2%;
 
-            @include sp {
-                font-size: 1.2rem;
-                width: 148px;
-                height: 24px;
-                top: -8px;
-                letter-spacing: 0.2px;
-                right: -7px;
-            }
-        }
-
-        .c-notesp {
+        @include sp {
             font-size: 1.2rem;
-            width: 146px;
+            width: 148px;
             height: 24px;
-            font-weight: 300;
-            top: -10%;
-            left: -5px;
-            position: absolute;
-            background-color: #7a89a8;
-            border-radius: 20px;
-            text-align: center;
-            color: #fff;
-            font-family: $sub-font1;
-
-            line-height: 2;
-            letter-spacing: -0.5px;
+            top: -8px;
+            letter-spacing: 0.2px;
+            right: -7px;
         }
+    }
+
+    .c-notesp {
+        font-size: 1.2rem;
+        width: 146px;
+        height: 24px;
+        font-weight: 300;
+        top: -10%;
+        left: -5px;
+        position: absolute;
+        background-color: #7a89a8;
+        border-radius: 20px;
+        text-align: center;
+        color: #fff;
+        font-family: $sub-font1;
+
+        line-height: 2;
+        letter-spacing: -0.5px;
     }
 
     .c-itemcase:nth-child(2) {
-        transform: translate(22px, -30px);
+        // transform: translate(22px, -30px);
     }
 
     .c-itemcase:last-child {
-        transform: translate(27px, -31px);
+        // transform: translate(27px, -31px);
+        margin-right: 0;
+        @include tb {
+            margin: -2px auto;
+        }
 
         @include sp {
-            transform: translate(16px, -24px);
+            
+
         }
 
         .c-des {
             letter-spacing: -1.9px;
-            transform: translateX(-7px);
+            // transform: translateX(-7px);
+            @include sp {
+                left: -2%;
+                letter-spacing: -2.6px;
+            }
+
+            span {
+                @include sp {
+                    transform: translateX(2px);
+                    display: inline-block;
+                    letter-spacing: -2px;
+                }
+            }
         }
     }
 
@@ -222,30 +257,33 @@ Css of home page
     .c-case__number {
         font-family: $sub-font3;
         font-weight: 700;
+        line-height: 1;
         font-size: 21.4rem;
         color: #ededed;
-        transform: translateX(21px);
         display: block;
+        margin-left: 30px;
 
         @include sp {
             font-size: 14.8rem;
-            transform: translateX(8px);
+            margin-left: 26px;
+            // transform: translateX(8px);
         }
     }
 
     .c-case__numbersp {
         font-family: $sub-font3;
-        margin-left: 144px;
         color: #ededed;
         font-size: 14.8rem;
         margin-top: 0;
         font-weight: 700;
+        margin-left: 161px;
+        line-height: 1;
     }
 
     .c-case__textsp {
         font-size: 1.7rem;
-        top: 55%;
-        right: 22.3%;
+        top: 52%;
+        right: 17.3%;
         letter-spacing: 3.9px;
         font-weight: 700;
         position: absolute;
@@ -259,15 +297,15 @@ Css of home page
         font-weight: 700;
         color: #c7c7c7;
         position: absolute;
-        top: 54.6%;
-        left: 22.7%;
+        top: 32.6%;
+        left: 24.7%;
         font-size: 2.4rem;
         letter-spacing: 6px;
 
         @include sp {
             font-size: 1.7rem;
-            top: 54.6%;
-            left: 20.5%;
+            top: 52.6%;
+            left: 25.5%;
             letter-spacing: 3.9px;
         }
 
@@ -278,17 +316,17 @@ Css of home page
         width: 100%;
         border-radius: 10px;
         height: 126px;
-        padding: 45px 30px;
-        position: absolute;
-        top: 81.6%;
-        left: -1px;
+        // padding: 45px 0;
+        top: -5%;
+        left: 10px;
+        position: relative;
 
         @include sp {
-            transform: translateX(-8px);
-            top: 81.4%;
-            width: 100%;
+            width: 99%;
             height: 87px;
-            padding: 30px 5px;
+            top: 93%;
+            left: 9px;
+            position: absolute;
         }
 
         &::after {
@@ -317,12 +355,11 @@ Css of home page
         background-color: #000;
         border-radius: 8px;
         position: absolute;
-        left: -1px;
-        transform: translateX(-8px);
-        top: 82.4%;
-        width: 100%;
+        left: 9px;
+        top: 91.4%;
+
+        width: 99%;
         height: 87px;
-        padding: 30px 5px;
 
         &::after {
 
@@ -348,12 +385,12 @@ Css of home page
         color: #231815;
         letter-spacing: 0.1px;
         text-align: center;
-        margin-top: 126px;
+        margin-top: 68px;
         transform: translate(14px, 4px);
 
         @include sp {
             font-size: 1.3rem;
-            margin-top: 77px;
+            margin-top: 163px;
             transform: translateX(0);
             margin-left: -1px;
             letter-spacing: -0.3px;
@@ -361,6 +398,8 @@ Css of home page
         }
     }
 }
+
+
 
 //HOUSE
 .c-house {
@@ -372,7 +411,7 @@ Css of home page
         color: #000;
         font-size: 4.8rem;
         text-align: center;
-        transform: translate(20px, 16px);
+        transform: translate(20px, 20px);
 
         @include sp {
             font-size: 1.2rem;
@@ -394,7 +433,7 @@ Css of home page
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        justify-content: space-between;
+        // justify-content: space-between;
         margin-top: 62px;
 
         @include sp {
@@ -405,8 +444,13 @@ Css of home page
     }
 
     .c-house__itemtwo {
+
         @include tb {
             flex-direction: column-reverse;
+        }
+
+        .c-houseitem__left {
+            padding-right: 2%;
         }
     }
 
@@ -414,7 +458,7 @@ Css of home page
         width: 50%;
 
         @include tb {
-            width: 84.3%;
+            width: 83.3%;
             margin: 0 auto;
         }
     }
@@ -457,15 +501,30 @@ Css of home page
         font-size: 2.8rem;
         color: #231815;
         font-weight: 700;
-        display: block;
+        display: inline-block;
         letter-spacing: 0.4px;
         transform: translateY(38px);
+        position: relative;
+
+        &::after {
+            content: "";
+            background-image: url(./assets/icon/icon-house.svg);
+            position: absolute;
+            top: -22px;
+            right: -33px;
+            display: block;
+            width: 42px;
+            height: 45px;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
 
         @include sp {
             font-size: 1.4rem;
             transform: none;
         }
     }
+
 
     .c-houseitem__titletextthree {
         transform: translateY(45px);
@@ -492,6 +551,8 @@ Css of home page
 
     .c-houseitem__right {
         width: 44.5%;
+        // padding-left: 1%;
+        margin-left: 5.4%;
 
         @include tb {
             width: 84.3%;
@@ -520,7 +581,7 @@ Css of home page
         transform: translateX(34px);
 
         @include sp {
-            margin: 11px 5px 0 50px;
+            margin: 11px 6px 0 50px;
             transform: translateY(1px);
         }
     }
@@ -560,13 +621,15 @@ Css of home page
 
 // POINT
 .c-point {
-    background-color: $background-colormain;
     width: 100%;
     margin-top: 164px;
     padding: 60px 46px 0;
     position: relative;
-    @include tb {
-        padding-bottom: 173px;
+
+    @include tbPro {
+        // padding-bottom: 173px;
+        padding: 60px 23px 0;
+
     }
 
     @include sp {
@@ -596,11 +659,13 @@ Css of home page
 
     .c-point__header {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        top: -131px;
+        justify-content: flex-end;
         position: relative;
-        margin-left: 158px;
+        margin-top: -120px;
+        width: 100%;
+        max-width: 1450px;
+        margin-right: 0;
+        margin-left: auto;
 
         @include tb {
             margin-left: 0;
@@ -609,12 +674,12 @@ Css of home page
 
     .c-point__header {
         .c-header__img {
-            width: 31.4%;
+            width: 367px;
+            max-width: 28%;
             position: relative;
             z-index: 1;
             height: 100%;
             margin-top: -96px;
-            left: -0.1%;
 
             @include tb {
                 display: none;
@@ -629,6 +694,10 @@ Css of home page
         font-size: 8.3rem;
         letter-spacing: 8.1px;
         color: #000;
+        text-align: right;
+        @include tbPro {
+            font-size: 7rem;
+        }
 
         @include sp {
             font-size: 3rem;
@@ -661,7 +730,8 @@ Css of home page
         justify-content: space-between;
         padding: 0 30px 80px;
         flex-wrap: wrap;
-        margin-top: -122px;
+        margin-top: 19px;
+       
 
         @include tb {
             width: 100%;
@@ -713,6 +783,11 @@ Css of home page
 
     .c-point__right {
         margin: -11px 0 0 auto;
+        width: 798px;
+        max-width: 72%;
+        @include tb {
+            max-width: 100%;
+        }
 
         @include sp {
             margin-top: -5px;
@@ -779,9 +854,22 @@ Css of home page
 //DESIGN
 .c-design {
     margin-bottom: 118px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 62.8%;
+        background-color: #ededed;
+        z-index: -1;
+        height: 527px;
+        bottom: 20%;
+    }
+
 
     @include sp {
-        max-width: 375px;
+        // max-width: 375px;
         margin: 0 auto 49px;
     }
 
@@ -828,19 +916,24 @@ Css of home page
 
 
     .c-design__left {
-        width: 56%;
-        padding: 1.2% 0 0 17.8%;
+        width: 680px;
+        max-width: 50%;
+        padding: 24px 50px 0 0;
+        margin: 0 auto;
+
 
         @include tb {
-            width: 83%;
+            width: 64%;
+            max-width: 100%;
             margin: 0 auto;
-            margin-left: 0%;
             margin-bottom: 47px;
+            padding: 30px 0 0;
         }
 
         @include sp {
-            width: 100%;
-            padding-left: 6%;
+            // width: 100%;
+            // padding-left: 6%;
+            max-width: unset;
         }
     }
 
@@ -858,26 +951,29 @@ Css of home page
 
 .c-design__right {
     width: 690px;
-    margin: 140px 62px 0 0;
+    // margin: 140px 0 0;
+    margin: 140px auto 0;
+
 
     @include tb {
 
-        width: 100%;
+        // width: 100%;
         height: 167px;
         margin: 0 auto;
-        padding: 0 26px;
+        padding: 0;
+        width: 64%;
+        max-width: 100%;
 
     }
 
     @include sp {
-        width: 100%;
         height: 168px;
         margin: 0 auto;
     }
 
     iframe {
         width: 100%;
-        max-width: 700px;
+        max-width: 100%;
         width: 701px;
         height: 390px;
 
@@ -950,26 +1046,26 @@ Css of home page
 
         @include sp {
             transform: unset;
-
-            margin-top: -6px;
+            margin-top: -5px;
         }
     }
 
     .c-itemtwo {
-        transform: translateX(-22px);
+        transform: translateX(-56px);
         margin-top: 14px;
+        width: 45%;
 
         @include sp {
-            transform: unset;
-            margin-top: 0;
-            margin: -7px 13px 0 0;
+            transform: translateX(-4px);
+            margin: -5px 18px 0 0;
+            width: 47%;
         }
 
         img:nth-child(2) {
-            transform: translate(69px, -32px);
+            transform: translate(84px, -14px);
 
             @include sp {
-                transform: translate(16px, 6px);
+                transform: translate(21px, 8px);
             }
         }
     }
@@ -987,12 +1083,11 @@ Css of home page
         margin: 0 auto;
         justify-content: space-between;
         max-width: 1031px;
-
-        margin-top: 22px;
+        margin-top: 38px;
         font-weight: 300;
-        margin-left: 164px;
+        // margin-left: 164px;
 
-        @include sp {
+        @include tb {
             display: unset;
             margin-top: 29px;
             margin-left: 0;
@@ -1039,7 +1134,7 @@ Css of home page
 
         @include sp {
             max-width: 204px;
-            height: 32px;
+            height: 33px;
             margin: 30px auto 0;
             font-size: 1.5rem;
             letter-spacing: 0.2px;
@@ -1196,6 +1291,7 @@ Css of home page
 
             @include sp {
                 font-size: 4.5rem;
+                transform: translate(-5px, -1px);
             }
 
             span {
@@ -1206,7 +1302,7 @@ Css of home page
                 @include sp {
                     font-size: 1.8rem;
                     margin-left: 5px;
-                    transform: translate(10px, 26px);
+                    transform: translate(-3px, 33px);
                 }
             }
         }
@@ -1283,7 +1379,7 @@ Css of home page
 
         @include sp {
             font-size: 1.4rem;
-            margin-top: 13px;
+            margin-top: 11px;
             transform: translateX(0);
             letter-spacing: -0.5px;
             margin-left: 0;
@@ -1323,8 +1419,8 @@ Css of home page
         flex-wrap: wrap;
 
         @include tb {
-            width: 90.2%;
-            transform: translateX(1px);
+            width: 89%;
+            // transform: translateX(1px);
             margin: 0 auto;
         }
     }
@@ -1333,7 +1429,7 @@ Css of home page
         margin: 70px 0 0 30px;
 
         @include sp {
-            margin: 33px auto 0;
+            margin: 35px auto 0;
         }
     }
 
@@ -1348,14 +1444,18 @@ Css of home page
         text-align: center;
 
         @include tb {
-            width: 42.4%;
-            margin-bottom: 25px;
+            width: 43%;
+            margin-right: 5%;
+            margin-bottom: 7.1%;
+            padding: 3.5% 0 3%;
         }
 
         @include sp {
-            width: 42.1%;
+            width: 43.1%;
             padding: 26px 0 0;
             margin-bottom: 24px;
+            margin-right: unset;
+
         }
 
     }
@@ -1363,6 +1463,19 @@ Css of home page
 
     .c-booking__item:first-child {
         background-color: #231815;
+
+        .c-booking__icon {
+            @include sp {
+                transform: translateX(-2px);
+            }
+        }
+
+        .c-booking__titlte {
+            @include sp {
+                transform: translate(-3px, 0);
+            }
+        }
+
     }
 
     .c-booking__item:last-child {
@@ -1394,13 +1507,13 @@ Css of home page
         }
 
         @include sp {
-            transform: translateX(-21px);
+            transform: translateX(-16px);
         }
     }
 
     .c-booking__item:nth-child(4) {
         @include sp {
-            transform: translateX(-21px);
+            transform: translateX(-16px);
         }
     }
 
@@ -1474,7 +1587,7 @@ Css of home page
     @include sp {
         width: 88.6%;
         margin: 41px auto 59px;
-        transform: translateX(-1px);
+        transform: unset;
     }
 
     .c-prevent__header {
@@ -1488,8 +1601,9 @@ Css of home page
         transform: translateX(2px);
 
         @include tb {
-            margin-bottom: 10px;
+            // margin-bottom: 10px;
             height: 240px;
+            transform: none;
         }
 
         @include sp {
@@ -1503,10 +1617,11 @@ Css of home page
         display: flex;
         flex-wrap: wrap;
         margin-left: 3px;
-        max-width: 1000px;
+        max-width: 1067px;
         width: 100%;
         margin: 0 auto;
-        justify-content: space-between;
+        padding: 0 20px;
+        -ms-flex-pack: justify;
     }
 
     .c-prevent__textone {
@@ -1516,8 +1631,9 @@ Css of home page
         font-size: 2.3rem;
         font-weight: 700;
         padding: 9px 28px;
-        margin-left: -16px;
-        transform: translate(2px, -2px);
+        transform: translate(-11px, -2px);
+        display: block;
+        margin: 0 auto;
 
         @include tb {
             margin: 0 auto;
@@ -1539,7 +1655,9 @@ Css of home page
         font-weight: 300;
         color: #fff;
         transform: translate(-11px, 0);
-        margin-top: 5px;
+        display: block;
+        margin: 0 auto;
+        padding-left: 20px;
 
         @include tb {
 
@@ -1561,10 +1679,11 @@ Css of home page
         color: #fff;
         font-size: 2rem;
         font-weight: 300;
-        margin-top: 21px;
-        margin-left: 12px;
+        margin-top: 6px;
         letter-spacing: 0.9px;
         text-align: center;
+        padding-bottom: 20px;
+        transform: translate(10px, 15px);
 
         @include tb {
             margin-bottom: 10px;
@@ -1603,7 +1722,7 @@ Css of home page
         padding: 37px 38px 49px;
 
         @include sp {
-            padding: 26px 20px 59px;
+            padding: 37px 20px 59px;
         }
     }
 
@@ -1631,9 +1750,11 @@ Css of home page
         border-right: unset;
         width: 18.3%;
         padding: 0 15px;
+
         @include tb {
             border-right: 1px solid #aeaeae;
         }
+
         @include sp {
             width: 50%;
         }
@@ -1642,9 +1763,11 @@ Css of home page
     .c-prevent__item:nth-child(10) {
         border-right: unset;
         width: 18.3%;
+
         @include tb {
             border-bottom: unset;
         }
+
         @include sp {
             width: 50%;
         }
@@ -1729,7 +1852,7 @@ Css of home page
 
         @include sp {
             width: 100%;
-            height: 580px;
+            height: 290px;
         }
 
         iframe {
@@ -1911,7 +2034,7 @@ Css of home page
     @include sp {
         max-width: 375px;
         transform: translateX(0);
-        margin: 28px auto;
+        margin: 29px auto;
         padding: 0;
     }
 
@@ -1941,6 +2064,7 @@ Css of home page
             display: block;
             display: inline-block;
             width: 100%;
+
             @include sp {
                 font-size: 2.4rem;
                 letter-spacing: 2.3px;
